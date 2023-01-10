@@ -48,21 +48,62 @@ export default defineConfig({
             isBody: true,
             templates: [
               {
-                name: "Hero",
+                name: "Admonition",
                 fields: [
                   {
-                    name: "header",
+                    name: "type",
+                    label: "Type",
+                    type: "string",
+                    options: [
+                      {
+                        label: "Note",
+                        value: "note",
+                      },
+                      {
+                        label: "Tip",
+                        value: "tip",
+                      },
+                      {
+                        label: "Info",
+                        value: "info",
+                      },
+                      {
+                        label: "Caution",
+                        value: "caution",
+                      },
+                      {
+                        label: "Danger",
+                        value: "danger",
+                      },
+                    ],
+                  },
+                  {
+                    name: "title",
+                    label: "Title",
+                    type: "string",
+                  },
+                  {
+                    name: "children",
+                    label: "Content",
+                    type: "rich-text",
+                  },
+                ],
+              },
+              {
+                name: "TinaDetails",
+                label: "Details",
+                fields: [
+                  {
+                    name: "summary",
+                    label: "Summary",
                     type: "string",
                     isTitle: true,
                     required: true,
                   },
                   {
-                    name: "description",
+                    name: "children",
+                    label: "Details",
                     type: "rich-text",
-                  },
-                  {
-                    name: "image",
-                    type: "image",
                   },
                 ],
               },
