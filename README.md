@@ -1,3 +1,9 @@
+## Get Started With Tina
+
+```
+$ yarn && yarn tina
+```
+
 # Website
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
