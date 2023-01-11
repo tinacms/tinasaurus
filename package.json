@@ -5,7 +5,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "tina": "tinacms dev  --noTelemetry  -c \"yarn start\" ",
-    "start": "tinacms build --noTelemetry && docusaurus start",
+    "start": "docusaurus start",
     "build": "tinacms build --noTelemetry && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
