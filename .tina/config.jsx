@@ -43,170 +43,193 @@ const branch =
   process.env.HEAD ||
   "main";
 
-const MDXTemplates = [
-  {
-    name: "Admonition",
-    ui: {
-      defaultItem: {
-        type: "note",
-        title: "Note",
-      },
-      itemProps: (item) => {
-        return { label: item?.title };
-      },
+const AdmonitionTemplate = {
+  name: "Admonition",
+  ui: {
+    defaultItem: {
+      type: "note",
+      title: "Note",
     },
-    fields: [
-      {
-        name: "type",
-        label: "Type",
-        type: "string",
-        options: [
-          {
-            label: "Note",
-            value: "note",
-          },
-          {
-            label: "Tip",
-            value: "tip",
-          },
-          {
-            label: "Info",
-            value: "info",
-          },
-          {
-            label: "Caution",
-            value: "caution",
-          },
-          {
-            label: "Danger",
-            value: "danger",
-          },
-        ],
-      },
-      {
-        name: "title",
-        label: "Title",
-        type: "string",
-        isTitle: true,
-        required: true,
-      },
-      {
-        name: "children",
-        label: "Content",
-        type: "rich-text",
-      },
-    ],
+    itemProps: (item) => {
+      return { label: item?.title };
+    },
   },
-  {
-    name: "Image",
-    fields: [
-      {
-        name: "src",
-        label: "Image URL",
-        type: "string",
-        required: true,
-      },
-      {
-        name: "alt",
-        label: "Alt Text",
-        type: "string",
-      },
-      {
-        name: "title",
-        label: "Title",
-        type: "string",
-      },
-    ],
-  },
-  {
-    name: "Details",
-    fields: [
-      {
-        name: "summary",
-        label: "Summary",
-        type: "string",
-        isTitle: true,
-        required: true,
-      },
-      {
-        name: "children",
-        label: "Details",
-        type: "rich-text",
-      },
-    ],
-  },
-  {
-    name: "CodeBlock",
-    label: "Code Block",
-    fields: [
-      {
-        name: "title",
-        label: "Filename",
-        type: "string",
-      },
-      {
-        name: "language",
-        label: "Language",
-        type: "string",
-      },
-      {
-        name: "children",
-        label: "Code",
-        type: "rich-text",
-        required: true,
-      },
-    ],
-  },
-  {
-    name: "Tabs",
-    fields: [
-      {
-        name: "children",
-        label: "Tabs",
-        type: "rich-text",
-        templates: [
-          {
-            name: "TabItem",
-            label: "Tab",
-            fields: [
-              {
-                name: "label",
-                label: "Label",
-                type: "string",
-                isTitle: true,
-                required: true,
-              },
-              {
-                name: "value",
-                type: "string",
-                ui: {
-                  component: ({ input, tinaForm }) => {
-                    React.useEffect(() => {
-                      input.onChange(slugify(tinaForm.values.label));
-                    }, [JSON.stringify(tinaForm.values)]);
+  fields: [
+    {
+      name: "type",
+      label: "Type",
+      type: "string",
+      options: [
+        {
+          label: "Note",
+          value: "note",
+        },
+        {
+          label: "Tip",
+          value: "tip",
+        },
+        {
+          label: "Info",
+          value: "info",
+        },
+        {
+          label: "Caution",
+          value: "caution",
+        },
+        {
+          label: "Danger",
+          value: "danger",
+        },
+      ],
+    },
+    {
+      name: "title",
+      label: "Title",
+      type: "string",
+      isTitle: true,
+      required: true,
+    },
+    {
+      name: "children",
+      label: "Content",
+      type: "rich-text",
+    },
+  ],
+};
 
-                    return (
-                      <input
-                        type="text"
-                        id={input.name}
-                        className="hidden"
-                        {...input}
-                      />
-                    );
-                  },
+const ImageTemplate = {
+  name: "Image",
+  fields: [
+    {
+      name: "src",
+      label: "Image URL",
+      type: "string",
+      required: true,
+    },
+    {
+      name: "alt",
+      label: "Alt Text",
+      type: "string",
+    },
+    {
+      name: "title",
+      label: "Title",
+      type: "string",
+    },
+  ],
+};
+
+const DetailsTemplate = {
+  name: "Details",
+  fields: [
+    {
+      name: "summary",
+      label: "Summary",
+      type: "string",
+      isTitle: true,
+      required: true,
+    },
+    {
+      name: "children",
+      label: "Details",
+      type: "rich-text",
+    },
+  ],
+};
+
+const CodeBlockTemplate = {
+  name: "CodeBlock",
+  label: "Code Block",
+  fields: [
+    {
+      name: "title",
+      label: "Filename",
+      type: "string",
+    },
+    {
+      name: "language",
+      label: "Language",
+      type: "string",
+    },
+    {
+      name: "children",
+      label: "Code",
+      type: "rich-text",
+      required: true,
+    },
+  ],
+};
+
+const TabsTemplate = {
+  name: "Tabs",
+  fields: [
+    {
+      name: "children",
+      label: "Tabs",
+      type: "rich-text",
+      templates: [
+        {
+          name: "TabItem",
+          label: "Tab",
+          fields: [
+            {
+              name: "label",
+              label: "Label",
+              type: "string",
+              isTitle: true,
+              required: true,
+            },
+            {
+              name: "value",
+              type: "string",
+              ui: {
+                component: ({ input, tinaForm }) => {
+                  React.useEffect(() => {
+                    input.onChange(slugify(tinaForm.values.label));
+                  }, [JSON.stringify(tinaForm.values)]);
+
+                  return (
+                    <input
+                      type="text"
+                      id={input.name}
+                      className="hidden"
+                      {...input}
+                    />
+                  );
                 },
               },
-              {
-                name: "children",
-                label: "Content",
-                type: "rich-text",
-              },
-            ],
-          },
-        ],
-      },
-    ],
-  },
+            },
+            {
+              name: "children",
+              label: "Content",
+              type: "rich-text",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+const DocCardListTemplate = {
+  name: "DocCardList",
+  label: "Doc Card List",
+  fields: [
+    {
+      name: "title",
+      label: "Title",
+      type: "string",
+    },
+  ],
+};
+
+const MDXTemplates = [
+  AdmonitionTemplate,
+  ImageTemplate,
+  DetailsTemplate,
+  CodeBlockTemplate,
+  TabsTemplate,
+  DocCardListTemplate,
 ];
 
 const DocLinkTemplate = {
