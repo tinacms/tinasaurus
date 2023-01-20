@@ -1,40 +1,7 @@
 import React from "react";
-import { defineConfig } from "tinacms";
+import { defineConfig, TextField } from "tinacms";
 import { ReferenceField } from "tinacms";
-import title from "title";
-
-const slugify = (text) => {
-  return text
-    .toString()
-    .toLowerCase()
-    .trim()
-    .replace(/[^\w\s-]/g, "") // remove non-word [a-z0-9_], non-whitespace, non-hyphen characters
-    .replace(/[\s_-]+/g, "_") // swap any length of whitespace, underscore, hyphen characters with a single _
-    .replace(/^-+|-+$/g, ""); // remove leading, trailing -
-};
-
-const docusaurusDate = (val) => {
-  let ye = new Intl.DateTimeFormat("en", {
-    year: "numeric",
-  }).format(val);
-  let mo = new Intl.DateTimeFormat("en", {
-    month: "2-digit",
-  }).format(val);
-  let da = new Intl.DateTimeFormat("en", {
-    day: "2-digit",
-  }).format(val);
-  return `${ye}-${mo}-${da}`;
-};
-
-const titleFromSlug = (slug) => {
-  const titleString = slug
-    .split("/")
-    .slice(1)
-    .join(" – ")
-    .replace(/-/g, " ")
-    .replace(/\.[^/.]+$/, "");
-  return title(titleString);
-};
+import { slugify, docusaurusDate, titleFromSlug } from "../util";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
@@ -171,6 +138,12 @@ const TabsTemplate = {
         {
           name: "TabItem",
           label: "Tab",
+          ui: {
+            defaultItem: {
+              label: "Tab",
+              value: "tab",
+            },
+          },
           fields: [
             {
               name: "label",
@@ -202,7 +175,10 @@ const TabsTemplate = {
             {
               name: "children",
               label: "Content",
-              type: "rich-text",
+              type: "string",
+              ui: {
+                component: "textarea",
+              },
             },
           ],
         },
@@ -409,6 +385,330 @@ const SidebarItemsField = {
   templates: [CategoryTemplate, DocLinkTemplate, ExternalLinkTemplate],
 };
 
+const PostCollection = {
+  name: "post",
+  label: "Posts",
+  path: "blog",
+  format: "mdx",
+  ui: {
+    defaultItem: {
+      date: docusaurusDate(new Date()),
+    },
+  },
+  fields: [
+    {
+      type: "string",
+      name: "title",
+      label: "Title",
+      isTitle: true,
+      required: true,
+    },
+    {
+      name: "authors",
+      label: "Authors",
+      type: "object",
+      list: true,
+      ui: {
+        itemProps: (item) => {
+          return { label: item?.name };
+        },
+      },
+      fields: [
+        {
+          name: "name",
+          label: "Name",
+          type: "string",
+          isTitle: true,
+          required: true,
+        },
+        {
+          name: "title",
+          label: "Title",
+          type: "string",
+        },
+        {
+          name: "url",
+          label: "URL",
+          type: "string",
+        },
+        {
+          name: "image_url",
+          label: "Image URL",
+          type: "string",
+        },
+      ],
+    },
+    {
+      name: "date",
+      label: "Date",
+      type: "string",
+      required: true,
+      ui: {
+        dateFormat: "MMM D, yyyy",
+        component: "date",
+        parse: (val) => {
+          docusaurusDate(val);
+        },
+      },
+    },
+    {
+      label: "Tags",
+      name: "tags",
+      type: "string",
+      list: true,
+      ui: {
+        component: "tags",
+      },
+    },
+    {
+      type: "rich-text",
+      name: "body",
+      label: "Body",
+      isBody: true,
+      templates: [...MDXTemplates],
+    },
+  ],
+};
+
+const DocsCollection = {
+  name: "doc",
+  label: "Docs",
+  path: "docs",
+  format: "mdx",
+  fields: [
+    {
+      type: "string",
+      name: "title",
+      label: "Title",
+      isTitle: true,
+      required: true,
+    },
+    {
+      type: "string",
+      name: "description",
+      label: "Description",
+    },
+    {
+      label: "Tags",
+      name: "tags",
+      type: "string",
+      list: true,
+      ui: {
+        component: "tags",
+      },
+    },
+    {
+      type: "rich-text",
+      name: "body",
+      label: "Body",
+      isBody: true,
+      templates: [...MDXTemplates],
+    },
+  ],
+};
+
+const SidebarCollection = {
+  name: "sidebar",
+  label: "Docs Sidebar",
+  path: "config/sidebar",
+  format: "json",
+  ui: {
+    global: true,
+    allowedActions: {
+      create: false,
+      delete: false,
+    },
+  },
+  fields: [SidebarItemsField],
+};
+
+const NavbarItemFields = [
+  {
+    name: "label",
+    label: "Label",
+    type: "string",
+    isTitle: true,
+    required: true,
+  },
+  {
+    name: "link",
+    label: "Link",
+    type: "string",
+    options: [
+      {
+        label: "None",
+        value: "none",
+      },
+      {
+        label: "Document",
+        value: "doc",
+      },
+      {
+        label: "Blog",
+        value: "blog",
+      },
+      {
+        label: "External",
+        value: "external",
+      },
+    ],
+    ui: {
+      component: "button-toggle",
+    },
+  },
+  {
+    name: "docLink",
+    label: "Document",
+    type: "reference",
+    collections: ["doc"],
+    ui: {
+      component: (props) => {
+        const link = React.useMemo(() => {
+          let fieldName = props.field.name;
+          fieldName =
+            fieldName.substring(0, fieldName.lastIndexOf(".")) || fieldName;
+
+          return fieldName
+            .split(".")
+            .reduce((o, i) => o[i], props.tinaForm.values).link;
+        }, [props.tinaForm.values]);
+
+        if (link !== "doc") {
+          return null;
+        }
+
+        return ReferenceField(props);
+      },
+    },
+  },
+  {
+    name: "externalLink",
+    label: "URL",
+    type: "string",
+    ui: {
+      component: (props) => {
+        const link = React.useMemo(() => {
+          let fieldName = props.field.name;
+          fieldName =
+            fieldName.substring(0, fieldName.lastIndexOf(".")) || fieldName;
+
+          return fieldName
+            .split(".")
+            .reduce((o, i) => o[i], props.tinaForm.values).link;
+        }, [props.tinaForm.values]);
+
+        if (link !== "external") {
+          return null;
+        }
+
+        return TextField(props);
+      },
+    },
+  },
+  {
+    name: "position",
+    label: "Position",
+    type: "string",
+    options: [
+      {
+        label: "Left",
+        value: "left",
+      },
+      {
+        label: "Right",
+        value: "right",
+      },
+    ],
+    ui: {
+      component: "button-toggle",
+    },
+  },
+];
+
+const NavbarSubitemProps = {
+  name: "items",
+  label: "Items",
+  type: "object",
+  list: true,
+  ui: {
+    itemProps: (item) => ({
+      label: item.label,
+    }),
+  },
+};
+
+const GlobalCollection = {
+  label: "Global",
+  name: "global",
+  path: "config/docusaurus",
+  format: "json",
+  ui: {
+    global: true,
+    allowedActions: {
+      create: false,
+      delete: false,
+    },
+  },
+  fields: [
+    {
+      type: "object",
+      label: "Logo",
+      name: "logo",
+      fields: [
+        {
+          type: "string",
+          label: "Alt Text",
+          name: "alt",
+        },
+        {
+          type: "string",
+          label: "Source",
+          name: "src",
+        },
+      ],
+    },
+    {
+      type: "string",
+      label: "Title",
+      name: "title",
+    },
+    {
+      type: "string",
+      label: "Tagline",
+      name: "tagline",
+    },
+    {
+      type: "string",
+      label: "URL",
+      name: "url",
+    },
+    {
+      type: "object",
+      label: "Navbar",
+      name: "navbar",
+      list: true,
+      ui: {
+        itemProps: (item) => ({
+          label: item.label,
+        }),
+      },
+      fields: [
+        ...NavbarItemFields,
+        {
+          ...NavbarSubitemProps,
+          fields: [
+            ...NavbarItemFields,
+            {
+              ...NavbarSubitemProps,
+              fields: NavbarItemFields,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
 export default defineConfig({
   branch,
   clientId: "ec80bfa2-69ad-4167-af8a-964c9609c8bf", // Get this from tina.io
@@ -425,194 +725,10 @@ export default defineConfig({
   },
   schema: {
     collections: [
-      {
-        name: "post",
-        label: "Posts",
-        path: "blog",
-        format: "mdx",
-        ui: {
-          defaultItem: {
-            date: docusaurusDate(new Date()),
-          },
-        },
-        fields: [
-          {
-            type: "string",
-            name: "title",
-            label: "Title",
-            isTitle: true,
-            required: true,
-          },
-          {
-            name: "authors",
-            label: "Authors",
-            type: "object",
-            list: true,
-            ui: {
-              itemProps: (item) => {
-                return { label: item?.name };
-              },
-            },
-            fields: [
-              {
-                name: "name",
-                label: "Name",
-                type: "string",
-                isTitle: true,
-                required: true,
-              },
-              {
-                name: "title",
-                label: "Title",
-                type: "string",
-              },
-              {
-                name: "url",
-                label: "URL",
-                type: "string",
-              },
-              {
-                name: "image_url",
-                label: "Image URL",
-                type: "string",
-              },
-            ],
-          },
-          {
-            name: "date",
-            label: "Date",
-            type: "string",
-            required: true,
-            ui: {
-              dateFormat: "MMM D, yyyy",
-              component: "date",
-              parse: (val) => {
-                docusaurusDate(val);
-              },
-            },
-          },
-          {
-            label: "Tags",
-            name: "tags",
-            type: "string",
-            list: true,
-            ui: {
-              component: "tags",
-            },
-          },
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
-            isBody: true,
-            templates: [...MDXTemplates],
-          },
-        ],
-      },
-      {
-        name: "doc",
-        label: "Docs",
-        path: "docs",
-        format: "mdx",
-        fields: [
-          {
-            type: "string",
-            name: "title",
-            label: "Title",
-            isTitle: true,
-            required: true,
-          },
-          {
-            type: "string",
-            name: "description",
-            label: "Description",
-          },
-          {
-            label: "Tags",
-            name: "tags",
-            type: "string",
-            list: true,
-            ui: {
-              component: "tags",
-            },
-          },
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
-            isBody: true,
-            templates: [...MDXTemplates],
-          },
-        ],
-      },
-      {
-        name: "sidebar",
-        label: "Docs Sidebar",
-        path: "config/sidebar",
-        format: "json",
-        ui: {
-          global: true,
-          allowedActions: {
-            create: false,
-            delete: false,
-          },
-        },
-        fields: [SidebarItemsField],
-      },
-      {
-        label: "Global",
-        name: "global",
-        path: "config/docusaurus",
-        format: "json",
-        ui: {
-          global: true,
-          allowedActions: {
-            create: false,
-            delete: false,
-          },
-        },
-        fields: [
-          {
-            type: "string",
-            label: "Title",
-            name: "title",
-          },
-          {
-            type: "string",
-            label: "Tagline",
-            name: "tagline",
-          },
-          {
-            type: "string",
-            label: "URL",
-            name: "url",
-          },
-          {
-            type: "object",
-            label: "Navbar",
-            name: "navbar",
-            fields: [
-              {
-                type: "object",
-                label: "Logo",
-                name: "logo",
-                fields: [
-                  {
-                    type: "string",
-                    label: "Alt Text",
-                    name: "alt",
-                  },
-                  {
-                    type: "string",
-                    label: "Source",
-                    name: "src",
-                  },
-                ],
-              },
-            ],
-          },
-        ],
-      },
+      DocsCollection,
+      SidebarCollection,
+      PostCollection,
+      GlobalCollection,
     ],
   },
 });

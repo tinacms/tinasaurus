@@ -1,4 +1,3 @@
-// @ts-check
 const sidebarData = require("./config/sidebar/index.json");
 
 const getDocId = (doc) => {
@@ -50,7 +49,6 @@ const getItem = (item) => {
   return itemProps;
 };
 
-/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   tutorialSidebar: sidebarData.items.map((item) => {
     return getItem(item);

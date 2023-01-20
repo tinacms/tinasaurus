@@ -1,14 +1,56 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
+const docusaurusData = require("./config/docusaurus/index.json");
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
+const getDocId = (doc) => {
+  return doc
+    .replace(/\.mdx?$/, "")
+    .split("/")
+    .slice(1)
+    .join("/");
+};
+
+const navbarItem = (item, subnav = false) => {
+  let navItem = {
+    label: item.label,
+  };
+
+  if (!subnav) {
+    navItem.position = item.position;
+  }
+
+  if (item.link === "external" && item.externalLink) {
+    navItem.href = item.externalLink;
+  }
+
+  if (item.link === "blog") {
+    navItem.to = "/blog";
+  }
+
+  if (item.link === "doc" && item.docLink) {
+    navItem.type = "doc";
+    navItem.docId = getDocId(item.docLink);
+  }
+
+  if (item.items) {
+    navItem.type = "dropdown";
+    navItem.items = item.items.map((subItem) => {
+      return navbarItem(subItem, true);
+    });
+    console.log(navItem.items);
+  }
+
+  return navItem;
+};
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
-  url: "https://your-docusaurus-test-site.com",
+  title: docusaurusData.title || "My Site",
+  tagline: docusaurusData.tagline || "Dinosaurs are cool",
+  url: docusaurusData.url || "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -28,17 +70,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          // editUrl: "www.google.com"",
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          // editUrl: "www.google.com"",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -51,25 +87,18 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "My Site",
+        title: docusaurusData.title || "",
         logo: {
-          alt: "My Site Logo",
-          src: "img/logo.svg",
+          alt: docusaurusData?.logo?.alt
+            ? docusaurusData?.logo?.alt
+            : "My Logo",
+          src: docusaurusData?.logo?.src
+            ? docusaurusData?.logo?.src
+            : "img/logo.svg",
         },
-        items: [
-          {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "Tutorial",
-          },
-          { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
-            position: "right",
-          },
-        ],
+        items: docusaurusData.navbar.map((item) => {
+          return navbarItem(item);
+        }),
       },
       footer: {
         style: "dark",
