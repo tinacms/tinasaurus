@@ -24,6 +24,12 @@ const getItem = (item) => {
     if (item.title) {
       itemProps.label = item.title;
     }
+    if (item.linked && item.link) {
+      itemProps.link = {
+        type: "doc",
+        id: getDocId(item.link),
+      };
+    }
     itemProps.items = item.items.map((item) => {
       return getItem(item);
     });
