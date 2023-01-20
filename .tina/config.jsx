@@ -300,28 +300,42 @@ const CategoryFields = [
     required: true,
   },
   {
-    name: "linked",
-    label: "Linked",
-    type: "boolean",
-  },
-  {
     name: "link",
     label: "Link",
+    type: "string",
+    options: [
+      {
+        label: "None",
+        value: "none",
+      },
+      {
+        label: "Document",
+        value: "doc",
+      },
+      {
+        label: "Generated Index",
+        value: "generated",
+      },
+    ],
+  },
+  {
+    name: "docLink",
+    label: "Document",
     type: "reference",
     collections: ["doc"],
     ui: {
       component: (props) => {
-        const linked = React.useMemo(() => {
+        const link = React.useMemo(() => {
           let fieldName = props.field.name;
           fieldName =
             fieldName.substring(0, fieldName.lastIndexOf(".")) || fieldName;
 
           return fieldName
             .split(".")
-            .reduce((o, i) => o[i], props.tinaForm.values).linked;
+            .reduce((o, i) => o[i], props.tinaForm.values).link;
         }, [props.tinaForm.values]);
 
-        if (!linked) {
+        if (link !== "doc") {
           return null;
         }
 
@@ -346,6 +360,9 @@ const CategoryTemplateProps = {
       return {
         label: item?.title ? item?.title : item.name,
       };
+    },
+    defaultItem: {
+      link: "none",
     },
   },
 };

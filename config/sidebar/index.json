@@ -6,6 +6,7 @@
     },
     {
       "title": "Tutorial - Basics",
+      "link": "generated",
       "items": [
         {
           "document": "docs/tutorial-basics/create-a-page.mdx",
@@ -31,7 +32,8 @@
       "_template": "category"
     },
     {
-      "title": "Tutorall - Extras",
+      "title": "Tutorial - Extras",
+      "link": "none",
       "items": [
         {
           "document": "docs/tutorial-extras/manage-docs-versions.mdx",
