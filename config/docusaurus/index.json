@@ -4,15 +4,7 @@
       "label": "Docs",
       "link": "doc",
       "docLink": "docs/intro.mdx",
-      "position": "left",
-      "items": [
-        {
-          "label": "Docs Link",
-          "link": "doc",
-          "docLink": "docs/tutorial-basics/congratulations.mdx",
-          "position": "left"
-        }
-      ]
+      "position": "left"
     },
     {
       "label": "Blog",
@@ -20,14 +12,28 @@
       "position": "left"
     },
     {
-      "label": "GitHub",
+      "label": "MDX Page",
+      "link": "page",
+      "docLink": "src/pages/Test-MDX-Page.mdx",
+      "pageLink": "src/pages/Test-MDX-Page.mdx",
+      "position": "left"
+    },
+    {
+      "label": "Docusaurus GitHub",
       "link": "external",
       "externalLink": "https://github.com/facebook/docusaurus",
+      "position": "right"
+    },
+    {
+      "label": "Tina",
+      "link": "external",
+      "externalLink": "https://tina.io/",
       "position": "right"
     }
   ],
   "logo": {
-    "src": "https://tina.io/svg/tina-icon.svg"
+    "alt": "Tina",
+    "src": "img/tina-icon.svg"
   },
-  "title": "Tina Starter"
+  "title": "Docusaurus + Tina Starter"
 }

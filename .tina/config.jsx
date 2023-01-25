@@ -1,7 +1,11 @@
 import React from "react";
 import { defineConfig, TextField } from "tinacms";
 import { ReferenceField } from "tinacms";
-import { slugify, docusaurusDate, titleFromSlug } from "../util";
+import { ContentBlockTemplate } from "../src/components/Content/template";
+import { FeaturesBlockTemplate } from "../src/components/Features/template";
+import { HeroBlockTemplate } from "../src/components/Hero/template";
+import { MDXTemplates } from "../src/theme/template";
+import { docusaurusDate, titleFromSlug } from "../util";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
@@ -10,203 +14,127 @@ const branch =
   process.env.HEAD ||
   "main";
 
-const AdmonitionTemplate = {
-  name: "Admonition",
+const PostCollection = {
+  name: "post",
+  label: "Posts",
+  path: "blog",
+  format: "mdx",
   ui: {
     defaultItem: {
-      type: "note",
-      title: "Note",
-    },
-    itemProps: (item) => {
-      return { label: item?.title };
+      date: docusaurusDate(new Date()),
     },
   },
   fields: [
     {
-      name: "type",
-      label: "Type",
       type: "string",
-      options: [
-        {
-          label: "Note",
-          value: "note",
-        },
-        {
-          label: "Tip",
-          value: "tip",
-        },
-        {
-          label: "Info",
-          value: "info",
-        },
-        {
-          label: "Caution",
-          value: "caution",
-        },
-        {
-          label: "Danger",
-          value: "danger",
-        },
-      ],
-    },
-    {
       name: "title",
       label: "Title",
-      type: "string",
       isTitle: true,
       required: true,
     },
     {
-      name: "children",
-      label: "Content",
-      type: "rich-text",
+      name: "authors",
+      label: "Authors",
+      type: "object",
+      list: true,
+      ui: {
+        itemProps: (item) => {
+          return { label: item?.name };
+        },
+      },
+      fields: [
+        {
+          name: "name",
+          label: "Name",
+          type: "string",
+          isTitle: true,
+          required: true,
+        },
+        {
+          name: "title",
+          label: "Title",
+          type: "string",
+        },
+        {
+          name: "url",
+          label: "URL",
+          type: "string",
+        },
+        {
+          name: "image_url",
+          label: "Image URL",
+          type: "string",
+        },
+      ],
     },
-  ],
-};
-
-const ImageTemplate = {
-  name: "Image",
-  fields: [
     {
-      name: "src",
-      label: "Image URL",
+      name: "date",
+      label: "Date",
       type: "string",
       required: true,
+      ui: {
+        dateFormat: "MMM D, yyyy",
+        component: "date",
+        parse: (val) => {
+          docusaurusDate(val);
+        },
+      },
     },
     {
-      name: "alt",
-      label: "Alt Text",
+      label: "Tags",
+      name: "tags",
       type: "string",
+      list: true,
+      ui: {
+        component: "tags",
+      },
     },
     {
-      name: "title",
-      label: "Title",
-      type: "string",
+      type: "rich-text",
+      name: "body",
+      label: "Body",
+      isBody: true,
+      templates: [...MDXTemplates],
     },
   ],
 };
 
-const DetailsTemplate = {
-  name: "Details",
+const DocsCollection = {
+  name: "doc",
+  label: "Docs",
+  path: "docs",
+  format: "mdx",
   fields: [
     {
-      name: "summary",
-      label: "Summary",
       type: "string",
+      name: "title",
+      label: "Title",
       isTitle: true,
       required: true,
     },
     {
-      name: "children",
-      label: "Details",
-      type: "rich-text",
-    },
-  ],
-};
-
-const CodeBlockTemplate = {
-  name: "CodeBlock",
-  label: "Code Block",
-  fields: [
-    {
-      name: "title",
-      label: "Filename",
       type: "string",
+      name: "description",
+      label: "Description",
     },
     {
-      name: "language",
-      label: "Language",
+      label: "Tags",
+      name: "tags",
       type: "string",
+      list: true,
+      ui: {
+        component: "tags",
+      },
     },
     {
-      name: "children",
-      label: "Code",
       type: "rich-text",
-      required: true,
+      name: "body",
+      label: "Body",
+      isBody: true,
+      templates: [...MDXTemplates],
     },
   ],
 };
-
-const TabsTemplate = {
-  name: "Tabs",
-  fields: [
-    {
-      name: "children",
-      label: "Tabs",
-      type: "rich-text",
-      templates: [
-        {
-          name: "TabItem",
-          label: "Tab",
-          ui: {
-            defaultItem: {
-              label: "Tab",
-              value: "tab",
-            },
-          },
-          fields: [
-            {
-              name: "label",
-              label: "Label",
-              type: "string",
-              isTitle: true,
-              required: true,
-            },
-            {
-              name: "value",
-              type: "string",
-              ui: {
-                component: ({ input, tinaForm }) => {
-                  React.useEffect(() => {
-                    input.onChange(slugify(tinaForm.values.label));
-                  }, [JSON.stringify(tinaForm.values)]);
-
-                  return (
-                    <input
-                      type="text"
-                      id={input.name}
-                      className="hidden"
-                      {...input}
-                    />
-                  );
-                },
-              },
-            },
-            {
-              name: "children",
-              label: "Content",
-              type: "string",
-              ui: {
-                component: "textarea",
-              },
-            },
-          ],
-        },
-      ],
-    },
-  ],
-};
-
-const DocCardListTemplate = {
-  name: "DocCardList",
-  label: "Doc Card List",
-  fields: [
-    {
-      name: "title",
-      label: "Title",
-      type: "string",
-    },
-  ],
-};
-
-const MDXTemplates = [
-  AdmonitionTemplate,
-  ImageTemplate,
-  DetailsTemplate,
-  CodeBlockTemplate,
-  TabsTemplate,
-  DocCardListTemplate,
-];
 
 const DocLinkTemplate = {
   name: "doc",
@@ -385,128 +313,6 @@ const SidebarItemsField = {
   templates: [CategoryTemplate, DocLinkTemplate, ExternalLinkTemplate],
 };
 
-const PostCollection = {
-  name: "post",
-  label: "Posts",
-  path: "blog",
-  format: "mdx",
-  ui: {
-    defaultItem: {
-      date: docusaurusDate(new Date()),
-    },
-  },
-  fields: [
-    {
-      type: "string",
-      name: "title",
-      label: "Title",
-      isTitle: true,
-      required: true,
-    },
-    {
-      name: "authors",
-      label: "Authors",
-      type: "object",
-      list: true,
-      ui: {
-        itemProps: (item) => {
-          return { label: item?.name };
-        },
-      },
-      fields: [
-        {
-          name: "name",
-          label: "Name",
-          type: "string",
-          isTitle: true,
-          required: true,
-        },
-        {
-          name: "title",
-          label: "Title",
-          type: "string",
-        },
-        {
-          name: "url",
-          label: "URL",
-          type: "string",
-        },
-        {
-          name: "image_url",
-          label: "Image URL",
-          type: "string",
-        },
-      ],
-    },
-    {
-      name: "date",
-      label: "Date",
-      type: "string",
-      required: true,
-      ui: {
-        dateFormat: "MMM D, yyyy",
-        component: "date",
-        parse: (val) => {
-          docusaurusDate(val);
-        },
-      },
-    },
-    {
-      label: "Tags",
-      name: "tags",
-      type: "string",
-      list: true,
-      ui: {
-        component: "tags",
-      },
-    },
-    {
-      type: "rich-text",
-      name: "body",
-      label: "Body",
-      isBody: true,
-      templates: [...MDXTemplates],
-    },
-  ],
-};
-
-const DocsCollection = {
-  name: "doc",
-  label: "Docs",
-  path: "docs",
-  format: "mdx",
-  fields: [
-    {
-      type: "string",
-      name: "title",
-      label: "Title",
-      isTitle: true,
-      required: true,
-    },
-    {
-      type: "string",
-      name: "description",
-      label: "Description",
-    },
-    {
-      label: "Tags",
-      name: "tags",
-      type: "string",
-      list: true,
-      ui: {
-        component: "tags",
-      },
-    },
-    {
-      type: "rich-text",
-      name: "body",
-      label: "Body",
-      isBody: true,
-      templates: [...MDXTemplates],
-    },
-  ],
-};
-
 const SidebarCollection = {
   name: "sidebar",
   label: "Docs Sidebar",
@@ -544,6 +350,10 @@ const NavbarItemFields = [
         value: "doc",
       },
       {
+        label: "Page",
+        value: "page",
+      },
+      {
         label: "Blog",
         value: "blog",
       },
@@ -552,9 +362,6 @@ const NavbarItemFields = [
         value: "external",
       },
     ],
-    ui: {
-      component: "button-toggle",
-    },
   },
   {
     name: "docLink",
@@ -574,6 +381,31 @@ const NavbarItemFields = [
         }, [props.tinaForm.values]);
 
         if (link !== "doc") {
+          return null;
+        }
+
+        return ReferenceField(props);
+      },
+    },
+  },
+  {
+    name: "pageLink",
+    label: "Page",
+    type: "reference",
+    collections: ["pages"],
+    ui: {
+      component: (props) => {
+        const link = React.useMemo(() => {
+          let fieldName = props.field.name;
+          fieldName =
+            fieldName.substring(0, fieldName.lastIndexOf(".")) || fieldName;
+
+          return fieldName
+            .split(".")
+            .reduce((o, i) => o[i], props.tinaForm.values).link;
+        }, [props.tinaForm.values]);
+
+        if (link !== "page") {
           return null;
         }
 
@@ -709,6 +541,70 @@ const GlobalCollection = {
   ],
 };
 
+const HomepageCollection = {
+  name: "homepage",
+  label: "Homepage",
+  path: "config/homepage",
+  format: "json",
+  ui: {
+    allowedActions: {
+      create: false,
+      delete: false,
+    },
+  },
+  fields: [
+    {
+      type: "string",
+      name: "title",
+      label: "Title",
+    },
+    {
+      type: "string",
+      name: "description",
+      label: "Description",
+    },
+    {
+      type: "object",
+      list: true,
+      name: "blocks",
+      label: "Blocks",
+      templates: [
+        HeroBlockTemplate,
+        FeaturesBlockTemplate,
+        ContentBlockTemplate,
+      ],
+    },
+  ],
+};
+
+const PagesCollection = {
+  name: "pages",
+  label: "Pages",
+  path: "src/pages",
+  format: "mdx",
+  fields: [
+    {
+      type: "string",
+      name: "title",
+      label: "Title",
+      isTitle: true,
+      required: true,
+    },
+    {
+      type: "string",
+      name: "description",
+      label: "Description",
+    },
+    {
+      type: "rich-text",
+      name: "body",
+      label: "Body",
+      isBody: true,
+      templates: [...MDXTemplates],
+    },
+  ],
+};
+
 export default defineConfig({
   branch,
   clientId: "ec80bfa2-69ad-4167-af8a-964c9609c8bf", // Get this from tina.io
@@ -728,6 +624,8 @@ export default defineConfig({
       DocsCollection,
       SidebarCollection,
       PostCollection,
+      HomepageCollection,
+      PagesCollection,
       GlobalCollection,
     ],
   },

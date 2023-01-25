@@ -1,5 +1,3 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
 const docusaurusData = require("./config/docusaurus/index.json");
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
@@ -10,6 +8,14 @@ const getDocId = (doc) => {
     .replace(/\.mdx?$/, "")
     .split("/")
     .slice(1)
+    .join("/");
+};
+
+const getPageRoute = (page) => {
+  return page
+    .replace(/\.mdx?$/, "")
+    .split("/")
+    .slice(2)
     .join("/");
 };
 
@@ -30,6 +36,10 @@ const navbarItem = (item, subnav = false) => {
     navItem.to = "/blog";
   }
 
+  if (item.link === "page" && item.pageLink) {
+    navItem.to = getPageRoute(item.pageLink);
+  }
+
   if (item.link === "doc" && item.docLink) {
     navItem.type = "doc";
     navItem.docId = getDocId(item.docLink);
@@ -40,7 +50,6 @@ const navbarItem = (item, subnav = false) => {
     navItem.items = item.items.map((subItem) => {
       return navbarItem(subItem, true);
     });
-    console.log(navItem.items);
   }
 
   return navItem;
