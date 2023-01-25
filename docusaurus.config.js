@@ -19,6 +19,31 @@ const getPageRoute = (page) => {
     .join("/");
 };
 
+const footerItem = (item) => {
+  if (item.title) {
+    return {
+      title: item.title,
+      items: item.items.map((subItem) => {
+        return footerItem(subItem);
+      }),
+    };
+  } else {
+    let linkObject = {
+      label: item.label,
+    };
+
+    if (item.to) {
+      linkObject.to = item.to;
+    } else if (item.href) {
+      linkObject.href = item.href;
+    } else {
+      linkObject.to = "/blog";
+    }
+
+    return linkObject;
+  }
+};
+
 const navbarItem = (item, subnav = false) => {
   let navItem = {
     label: item.label,
@@ -110,48 +135,10 @@ const config = {
         }),
       },
       footer: {
-        style: "dark",
-        links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
-              },
-            ],
-          },
-        ],
+        style: docusaurusData.footer?.style || "dark",
+        links: docusaurusData.footer?.links.map((item) => {
+          return footerItem(item);
+        }),
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {

@@ -537,6 +537,119 @@ const GlobalCollection = {
         },
       ],
     },
+    {
+      type: "object",
+      label: "Footer",
+      name: "footer",
+      fields: [
+        {
+          name: "style",
+          label: "Style",
+          type: "string",
+          options: [
+            {
+              label: "Dark",
+              value: "dark",
+            },
+            {
+              label: "Light",
+              value: "light",
+            },
+          ],
+          ui: {
+            component: "button-toggle",
+          },
+        },
+        {
+          type: "object",
+          label: "Categories",
+          name: "links",
+          list: true,
+          ui: {
+            itemProps: (item) => ({
+              label: item.title,
+            }),
+          },
+          fields: [
+            {
+              type: "string",
+              label: "Title",
+              name: "title",
+            },
+            {
+              type: "object",
+              label: "Links",
+              name: "items",
+              list: true,
+              templates: [
+                {
+                  name: "internal",
+                  label: "Internal",
+                  ui: {
+                    itemProps: (item) => ({
+                      label: item.label,
+                    }),
+                  },
+                  fields: [
+                    {
+                      type: "string",
+                      label: "Label",
+                      name: "label",
+                    },
+                    {
+                      type: "reference",
+                      label: "Page",
+                      name: "to",
+                      collections: ["doc", "pages", "post"],
+                    },
+                  ],
+                },
+                {
+                  name: "blog",
+                  label: "Blog",
+                  ui: {
+                    defaultItem: {
+                      label: "Blog",
+                    },
+                    itemProps: (item) => ({
+                      label: item.label,
+                    }),
+                  },
+                  fields: [
+                    {
+                      type: "string",
+                      label: "Label",
+                      name: "label",
+                    },
+                  ],
+                },
+                {
+                  name: "external",
+                  label: "External",
+                  ui: {
+                    itemProps: (item) => ({
+                      label: item.label,
+                    }),
+                  },
+                  fields: [
+                    {
+                      type: "string",
+                      label: "Label",
+                      name: "label",
+                    },
+                    {
+                      type: "string",
+                      label: "URL",
+                      name: "href",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
 
