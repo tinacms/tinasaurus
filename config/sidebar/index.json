@@ -33,7 +33,7 @@
     },
     {
       "title": "Tutorial - Extras",
-      "link": "none",
+      "link": "generated",
       "items": [
         {
           "document": "docs/tutorial-extras/manage-docs-versions.mdx",
