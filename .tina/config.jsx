@@ -1,7 +1,6 @@
 import React from "react";
 import { defineConfig, TextField } from "tinacms";
 import { ReferenceField } from "tinacms";
-import { ContentBlockTemplate } from "../src/components/Content/template";
 import { FeaturesBlockTemplate } from "../src/components/Features/template";
 import { HeroBlockTemplate } from "../src/components/Hero/template";
 import { MDXTemplates } from "../src/theme/template";
@@ -568,11 +567,7 @@ const HomepageCollection = {
       list: true,
       name: "blocks",
       label: "Blocks",
-      templates: [
-        HeroBlockTemplate,
-        FeaturesBlockTemplate,
-        ContentBlockTemplate,
-      ],
+      templates: [HeroBlockTemplate, FeaturesBlockTemplate],
     },
   ],
 };

@@ -1,7 +1,6 @@
 import React from "react";
 import { Features } from "../Features";
 import { Hero } from "../Hero";
-import { Content } from "../Content";
 
 export const Blocks = ({ blocks }) => {
   return (
@@ -19,12 +18,6 @@ export const Blocks = ({ blocks }) => {
                 return (
                   <div data-tinafield={`blocks.${i}`} key={i + block._template}>
                     <Features data={block} index={i} />
-                  </div>
-                );
-              case "content":
-                return (
-                  <div data-tinafield={`blocks.${i}`} key={i + block._template}>
-                    <Content data={block} index={i} />
                   </div>
                 );
               default:

@@ -55,28 +55,6 @@ const AdmonitionTemplate = {
   ],
 };
 
-const ImageTemplate = {
-  name: "Image",
-  fields: [
-    {
-      name: "src",
-      label: "Image URL",
-      type: "string",
-      required: true,
-    },
-    {
-      name: "alt",
-      label: "Alt Text",
-      type: "string",
-    },
-    {
-      name: "title",
-      label: "Title",
-      type: "string",
-    },
-  ],
-};
-
 const DetailsTemplate = {
   name: "Details",
   fields: [
@@ -192,7 +170,6 @@ const DocCardListTemplate = {
 
 export const MDXTemplates = [
   AdmonitionTemplate,
-  ImageTemplate,
   DetailsTemplate,
   CodeBlockTemplate,
   TabsTemplate,
