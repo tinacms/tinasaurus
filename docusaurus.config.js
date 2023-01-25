@@ -19,6 +19,10 @@ const getPageRoute = (page) => {
     .join("/");
 };
 
+const getPath = (page) => {
+  return page.replace(/\.mdx?$/, "");
+};
+
 const footerItem = (item) => {
   if (item.title) {
     return {
@@ -33,7 +37,7 @@ const footerItem = (item) => {
     };
 
     if (item.to) {
-      linkObject.to = item.to;
+      linkObject.to = getPath(item.to);
     } else if (item.href) {
       linkObject.href = item.href;
     } else {
