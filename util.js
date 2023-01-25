@@ -40,3 +40,7 @@ export const getDocId = (doc) => {
     .slice(1)
     .join("/");
 };
+
+export const getDocPath = (doc) => {
+  return doc.replace(/\.mdx?$/, "");
+};
