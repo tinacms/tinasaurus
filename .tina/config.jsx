@@ -34,7 +34,7 @@ const WarningIcon = (props) => {
 
 const RestartWarning = () => {
   return (
-    <p className="rounded-lg border shadow-sm px-4 py-2.5 bg-gradient-to-r from-yellow-50 to-yellow-100 border-yellow-200 mb-4">
+    <p className="rounded-lg border shadow px-4 py-2.5 bg-gradient-to-r from-yellow-50 to-yellow-100 border-yellow-200 mb-4">
       <div className="flex items-center gap-2">
         <WarningIcon className={`w-6 h-auto flex-shrink-0 text-yellow-400`} />
         <div className={`flex-1 text-sm text-yellow-700 whitespace-normal	`}>
