@@ -325,7 +325,19 @@ const SidebarCollection = {
       delete: false,
     },
   },
-  fields: [SidebarItemsField],
+  fields: [
+    {
+      type: "string",
+      label: "Label",
+      name: "label",
+      required: true,
+      isTitle: true,
+      ui: {
+        component: "hidden",
+      },
+    },
+    SidebarItemsField,
+  ],
 };
 
 const NavbarItemFields = [
@@ -689,6 +701,16 @@ const HomepageCollection = {
     },
   },
   fields: [
+    {
+      type: "string",
+      label: "Label",
+      name: "label",
+      required: true,
+      isTitle: true,
+      ui: {
+        component: "hidden",
+      },
+    },
     {
       type: "string",
       name: "title",

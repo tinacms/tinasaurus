@@ -1,4 +1,5 @@
 {
+  "label": "Docs Sidebar",
   "items": [
     {
       "document": "docs/intro.mdx",
