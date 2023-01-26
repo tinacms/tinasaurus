@@ -504,6 +504,7 @@ const GlobalCollection = {
       type: "string",
       label: "Title",
       name: "title",
+      required: true,
     },
     {
       type: "string",
@@ -514,6 +515,7 @@ const GlobalCollection = {
       type: "string",
       label: "URL",
       name: "url",
+      required: true,
     },
     {
       type: "object",
