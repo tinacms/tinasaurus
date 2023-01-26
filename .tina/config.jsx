@@ -38,8 +38,8 @@ const RestartWarning = () => {
       <div className="flex items-center gap-2">
         <WarningIcon className={`w-6 h-auto flex-shrink-0 text-yellow-400`} />
         <div className={`flex-1 text-sm text-yellow-700 whitespace-normal	`}>
-          To see settings changes reflected on your site, you must restart the
-          Tina CLI after saving changes <em>(local development only)</em>.
+          To see settings changes reflected on your site, restart the Tina CLI
+          after saving <em>(local development only)</em>.
         </div>
       </div>
     </p>
