@@ -754,10 +754,10 @@ export default defineConfig({
   schema: {
     collections: [
       DocsCollection,
-      SidebarCollection,
       PostCollection,
       HomepageCollection,
       PagesCollection,
+      SidebarCollection,
       SettingsCollection,
     ],
   },
