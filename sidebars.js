@@ -17,6 +17,10 @@ const getItem = (item) => {
 
   if (type === "doc") {
     itemProps.id = getDocId(item.document);
+
+    if (item.label) {
+      itemProps.label = item.label;
+    }
   }
 
   if (type === "category") {

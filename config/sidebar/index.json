@@ -1,6 +1,11 @@
 {
   "items": [
     {
+      "document": "docs/tutorial-basics/deploy-your-site.mdx",
+      "label": "Label Test",
+      "_template": "doc"
+    },
+    {
       "document": "docs/intro.mdx",
       "_template": "doc"
     },
