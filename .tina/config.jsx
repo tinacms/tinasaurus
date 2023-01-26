@@ -470,9 +470,9 @@ const NavbarSubitemProps = {
   },
 };
 
-const GlobalCollection = {
-  label: "Global",
-  name: "global",
+const SettingsCollection = {
+  label: "Settings",
+  name: "settings",
   path: "config/docusaurus",
   format: "json",
   ui: {
@@ -483,6 +483,16 @@ const GlobalCollection = {
     },
   },
   fields: [
+    {
+      type: "string",
+      label: "Label",
+      name: "label",
+      required: true,
+      isTitle: true,
+      ui: {
+        component: "hidden",
+      },
+    },
     {
       type: "object",
       label: "Logo",
@@ -668,6 +678,8 @@ const GlobalCollection = {
 const HomepageCollection = {
   name: "homepage",
   label: "Homepage",
+  description:
+    "To see settings changes reflected on your site, you must restart the Tina CLI after saving changes (local development only).",
   path: "config/homepage",
   format: "json",
   ui: {
@@ -746,7 +758,7 @@ export default defineConfig({
       PostCollection,
       HomepageCollection,
       PagesCollection,
-      GlobalCollection,
+      SettingsCollection,
     ],
   },
 });
