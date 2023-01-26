@@ -38,6 +38,7 @@
   "title": "Docusaurus + Tina Starter",
   "footer": {
     "style": "dark",
+    "copyright": "My Project, Inc. Built with Docusaurus.",
     "links": [
       {
         "title": "Docs",
@@ -84,5 +85,6 @@
         ]
       }
     ]
-  }
+  },
+  "url": "https://docusaurus-tina-test.vercel.app/"
 }

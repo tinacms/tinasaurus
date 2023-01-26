@@ -23,12 +23,12 @@ const getPath = (page) => {
   return page.replace(/\.mdx?$/, "");
 };
 
-const footerItem = (item) => {
+const formatFooterItem = (item) => {
   if (item.title) {
     return {
       title: item.title,
       items: item.items.map((subItem) => {
-        return footerItem(subItem);
+        return formatFooterItem(subItem);
       }),
     };
   } else {
@@ -48,7 +48,7 @@ const footerItem = (item) => {
   }
 };
 
-const navbarItem = (item, subnav = false) => {
+const formatNavbarItem = (item, subnav = false) => {
   let navItem = {
     label: item.label,
   };
@@ -77,7 +77,7 @@ const navbarItem = (item, subnav = false) => {
   if (item.items) {
     navItem.type = "dropdown";
     navItem.items = item.items.map((subItem) => {
-      return navbarItem(subItem, true);
+      return formatNavbarItem(subItem, true);
     });
   }
 
@@ -108,11 +108,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // editUrl: "www.google.com"",
+          editUrl: docusaurusData.url + "/admin/index.html#/collections/doc",
         },
         blog: {
           showReadingTime: true,
-          // editUrl: "www.google.com"",
+          editUrl: docusaurusData.url + "/admin/index.html#/collections/post",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -135,15 +135,17 @@ const config = {
             : "img/logo.svg",
         },
         items: docusaurusData.navbar.map((item) => {
-          return navbarItem(item);
+          return formatNavbarItem(item);
         }),
       },
       footer: {
         style: docusaurusData.footer?.style || "dark",
         links: docusaurusData.footer?.links.map((item) => {
-          return footerItem(item);
+          return formatFooterItem(item);
         }),
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright:
+          `Copyright © ${new Date().getFullYear()} ` +
+          (docusaurusData.footer?.copyright || docusaurusData.title),
       },
       prism: {
         theme: lightCodeTheme,

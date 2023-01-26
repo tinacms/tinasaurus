@@ -44,3 +44,15 @@ export const getDocId = (doc) => {
 export const getDocPath = (doc) => {
   return doc.replace(/\.mdx?$/, "");
 };
+
+export const getPageRoute = (page) => {
+  return page
+    .replace(/\.mdx?$/, "")
+    .split("/")
+    .slice(2)
+    .join("/");
+};
+
+export const getPath = (page) => {
+  return page.replace(/\.mdx?$/, "");
+};

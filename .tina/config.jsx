@@ -5,6 +5,7 @@ import { FeaturesBlockTemplate } from "../src/components/Features/template";
 import { HeroBlockTemplate } from "../src/components/Hero/template";
 import { MDXTemplates } from "../src/theme/template";
 import { docusaurusDate, titleFromSlug } from "../util";
+import title from "title";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
@@ -440,6 +441,7 @@ const NavbarItemFields = [
     name: "position",
     label: "Position",
     type: "string",
+    required: true,
     options: [
       {
         label: "Left",
@@ -520,8 +522,11 @@ const GlobalCollection = {
       list: true,
       ui: {
         itemProps: (item) => ({
-          label: item.label,
+          label: item.label + " - " + title(item.position),
         }),
+        defaultItem: {
+          position: "left",
+        },
       },
       fields: [
         ...NavbarItemFields,
@@ -647,6 +652,11 @@ const GlobalCollection = {
               ],
             },
           ],
+        },
+        {
+          type: "string",
+          label: "Copyright",
+          name: "copyright",
         },
       ],
     },
