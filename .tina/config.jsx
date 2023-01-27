@@ -566,7 +566,7 @@ const SettingsCollection = {
           name: "alt",
         },
         {
-          type: "string",
+          type: "image",
           label: "Source",
           name: "src",
         },

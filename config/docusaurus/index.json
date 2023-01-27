@@ -34,12 +34,11 @@
   ],
   "logo": {
     "alt": "Tina",
-    "src": "img/tina-icon.svg"
+    "src": "/img/tina-icon.svg"
   },
-  "title": "Docusaurus + Tina Starter",
+  "title": "Tinasaurus",
   "footer": {
     "style": "dark",
-    "copyright": "My Project, Inc. Built with Docusaurus.",
     "links": [
       {
         "title": "Docs",
@@ -85,7 +84,8 @@
           }
         ]
       }
-    ]
+    ],
+    "copyright": "My Project, Inc. Built with Docusaurus."
   },
   "url": "https://docusaurus-tina-test.vercel.app/"
 }
