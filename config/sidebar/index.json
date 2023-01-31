@@ -2,6 +2,35 @@
   "label": "Docs Sidebar",
   "items": [
     {
+      "title": "Child 1",
+      "link": "none",
+      "items": [
+        {
+          "title": "Child 2",
+          "link": "none",
+          "items": [
+            {
+              "title": "Child 3",
+              "link": "none",
+              "items": [
+                {
+                  "document": "docs/tutorial-basics/create-a-page.mdx",
+                  "label": "Test page",
+                  "_template": "doc"
+                }
+              ],
+              "_template": "category"
+            }
+          ],
+          "_template": "category"
+        }
+      ],
+      "_template": "category"
+    },
+    {
+      "_template": "doc"
+    },
+    {
       "document": "docs/intro.mdx",
       "_template": "doc"
     },
