@@ -16,6 +16,10 @@ const getItem = (item) => {
   };
 
   if (type === "doc") {
+    if (!item.document) {
+      return [];
+    }
+
     itemProps.id = getDocId(item.document);
 
     if (item.label) {
@@ -27,34 +31,41 @@ const getItem = (item) => {
     if (item.title) {
       itemProps.label = item.title;
     }
-    if (item.link) {
-      if (item.link === "doc") {
+
+    if (item.link && item.link !== "none") {
+      if (item.link === "doc" && item.docLink) {
         itemProps.link = {
           type: "doc",
           id: getDocId(item.docLink),
         };
-      }
-      if (item.link === "generated") {
+      } else if (item.link === "generated") {
         itemProps.link = {
           type: "generated-index",
         };
+      } else {
+        return [];
       }
     }
-    itemProps.items = item.items.map((item) => {
+
+    itemProps.items = item.items.flatMap((item) => {
       return getItem(item);
     });
   }
 
   if (type === "link") {
-    itemProps.label = item.title;
-    itemProps.href = item.href;
+    if (item.href && item.title) {
+      itemProps.label = item.title;
+      itemProps.href = item.href;
+    } else {
+      return [];
+    }
   }
 
-  return itemProps;
+  return [itemProps];
 };
 
 const sidebars = {
-  tutorialSidebar: sidebarData.items.map((item) => {
+  tutorialSidebar: sidebarData.items.flatMap((item) => {
     return getItem(item);
   }),
 };
