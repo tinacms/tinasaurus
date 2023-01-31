@@ -2,7 +2,7 @@
   "label": "Docs Sidebar",
   "items": [
     {
-      "title": "Child 1",
+      "title": "Nested Link",
       "link": "none",
       "items": [
         {
