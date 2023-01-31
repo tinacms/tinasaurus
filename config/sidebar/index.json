@@ -28,9 +28,6 @@
       "_template": "category"
     },
     {
-      "_template": "doc"
-    },
-    {
       "document": "docs/intro.mdx",
       "_template": "doc"
     },
