@@ -1,12 +1,11 @@
 {
-  "name": "docusaurus-tina-test",
+  "name": "tinasaurus",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "tina": "tinacms dev  --noTelemetry  -c \"yarn start\" ",
+    "tina": "tinacms dev -c \"yarn start\" ",
     "start": "docusaurus start",
-    "build": "tinacms build --noTelemetry && docusaurus build",
+    "build": "tinacms build && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
