@@ -1,14 +1,16 @@
-## Get Started With Tina
+![Tinasaurus](https://res.cloudinary.com/forestry-demo/image/upload/v1677522334/tina-io/blog/tinacms-docusaurus-markdown-editing.gif)
+
+## Quickstart With Tina
 
 ```
 $ yarn && yarn tina
 ```
 
-# Website
+This will install dependancies and open the website in your browser. Go to the [Tina Admin](http://localhost:3000/admin) to start editing.
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+## About
 
-To view the CMS go to [http://localhost:3000/admin](http://localhost:3000/admin). 
+This website is built using [Docusaurus 2](https://docusaurus.io/) and [Tina](https://tina.io/).
 
 ### Installation
 
@@ -19,10 +21,10 @@ $ yarn
 ### Local Development
 
 ```
-$ yarn start
+$ yarn tina
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server. Go to the [Tina Admin](http://localhost:3000/admin) to start editing.
 
 ### Build
 
@@ -34,16 +36,4 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+To deploy to production and support editing on your live website, you can follow the steps from [Tina's docs](https://tina.io/docs/forestry/migrate/#deploy-tina-to-your-site).
