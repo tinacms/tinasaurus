@@ -8,6 +8,8 @@ $ yarn && yarn tina
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
+To view the CMS go to [http://localhost:3000/admin](http://localhost:3000/admin). 
+
 ### Installation
 
 ```
