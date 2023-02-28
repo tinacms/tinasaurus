@@ -1,4 +1,5 @@
-![Tinasaurus](https://res.cloudinary.com/forestry-demo/image/upload/v1677522334/tina-io/blog/tinacms-docusaurus-markdown-editing.gif)
+[![Tinasaurus Demo](https://res.cloudinary.com/forestry-demo/image/upload/v1677522334/tina-io/blog/tinacms-docusaurus-markdown-editing.gif 'Tinasaurus Overview Video')](https://www.youtube.com/watch?v=2bHBwM54UB8)
+
 
 ## Quickstart With Tina
 
@@ -13,6 +14,8 @@ Visit the CMS at [http://localhost:3000/admin](http://localhost:3000/admin) to s
 ## About
 
 This website is built using [Docusaurus 2](https://docusaurus.io/) and [TinaCMS](https://tina.io/).
+
+[Watch an overview of this project on YouTube](https://www.youtube.com/watch?v=2bHBwM54UB8).
 
 ### Installation
 
