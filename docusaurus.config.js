@@ -88,7 +88,7 @@ const formatNavbarItem = (item, subnav = false) => {
 const config = {
   title: docusaurusData.title || "My Site",
   tagline: docusaurusData.tagline || "Dinosaurs are cool",
-  url: docusaurusData.url || "https://your-docusaurus-test-site.com",
+  url: docusaurusData.url || "https://tinasaurus.vercel.app/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -108,11 +108,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: docusaurusData.url + "/admin/index.html#/collections/doc",
+          editUrl: docusaurusData.url + "/admin/#/collections/doc",
         },
         blog: {
           showReadingTime: true,
-          editUrl: docusaurusData.url + "/admin/index.html#/collections/post",
+          editUrl: docusaurusData.url + "/admin/#/collections/post",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
