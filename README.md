@@ -3,25 +3,27 @@
 ## Quickstart With Tina
 
 ```
-$ yarn && yarn tina
+$ npm install && npm run tina  
 ```
 
-This will install dependancies and open the website in your browser. Go to the [Tina Admin](http://localhost:3000/admin) to start editing.
+This will install dependancies and open the website in your browser. 
+
+Visit the CMS at [http://localhost:3000/admin](http://localhost:3000/admin) to start editing.
 
 ## About
 
-This website is built using [Docusaurus 2](https://docusaurus.io/) and [Tina](https://tina.io/).
+This website is built using [Docusaurus 2](https://docusaurus.io/) and [TinaCMS](https://tina.io/).
 
 ### Installation
 
 ```
-$ yarn
+$ npm install
 ```
 
 ### Local Development
 
 ```
-$ yarn tina
+$ npm run tina
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server. Go to the [Tina Admin](http://localhost:3000/admin) to start editing.
@@ -29,11 +31,11 @@ This command starts a local development server and opens up a browser window. Mo
 ### Build
 
 ```
-$ yarn build
+$ npm run build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 ### Deployment
 
-To deploy to production and support editing on your live website, you can follow the steps from [Tina's docs](https://tina.io/docs/forestry/migrate/#deploy-tina-to-your-site).
+To deploy to production and support editing on your live website (at **your-domain.com/admin**), you can follow the steps from [Tina's docs](https://tina.io/docs/forestry/migrate/#deploy-tina-to-your-site).
