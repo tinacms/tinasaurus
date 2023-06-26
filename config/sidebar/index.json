@@ -2,11 +2,6 @@
   "label": "Docs Sidebar",
   "items": [
     {
-      "document": "docs/intro.mdx",
-      "label": "Introduction",
-      "_template": "doc"
-    },
-    {
       "title": "Bible: The Whole Story - Creation and Fall",
       "link": "none",
       "items": [
