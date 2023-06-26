@@ -11,13 +11,6 @@
       "label": "Blog",
       "link": "blog",
       "position": "left"
-    },
-    {
-      "label": "MDX Page",
-      "link": "page",
-      "docLink": "src/pages/Test-MDX-Page.mdx",
-      "pageLink": "src/pages/Test-MDX-Page.mdx",
-      "position": "left"
     }
   ],
   "logo": {
@@ -29,14 +22,7 @@
     "style": "dark",
     "links": [
       {
-        "title": "Docs",
-        "items": [
-          {
-            "label": "Introduction",
-            "to": "docs/intro.mdx",
-            "_template": "internal"
-          }
-        ]
+        "title": "Docs"
       },
       {
         "title": "Community",
