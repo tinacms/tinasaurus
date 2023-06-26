@@ -5,7 +5,40 @@
  */
 
 /* You can override the default Infima variables here. */
+
+@font-face {
+  font-family: "Sans";
+  src: url("/font/SuisseIntl-Regular-WebXL.woff2") format("woff2");
+  display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sans";
+  src: url("/font/SuisseIntl-SemiBold-WebXL.woff2") format("woff2");
+  display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Serif";
+  src: url("/font/SuisseWorks-Regular-WebXL.woff2") format("woff2");
+  display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Serif";
+  src: url("/font/SuisseWorks-RegularItalic-WebXL.woff2") format("woff2");
+  display: swap;
+  font-style: italic;
+}
+
 :root {
+  --ifm-font-family-base: "Sans";
+  --ifm-heading-font-family: "Serif";
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
