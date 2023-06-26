@@ -2,6 +2,17 @@
   "label": "Docs Sidebar",
   "items": [
     {
+      "title": "Bible: The Whole Story - Creation and Fall",
+      "link": "none",
+      "items": [
+        {
+          "document": "docs/The-History-of-the-World-in-a-Nutshell.mdx",
+          "_template": "doc"
+        }
+      ],
+      "_template": "category"
+    },
+    {
       "document": "docs/intro.mdx",
       "_template": "doc"
     },
