@@ -28,44 +28,6 @@
   font-style: italic;
 }
 
-@font-face {
-  font-family: "Sans";
-  src: url("/font/UntitledSansWeb-Light.woff2") format("woff2");
-  display: swap;
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Sans";
-  src: url("/font/UntitledSansWeb-Regular.woff2") format("woff2");
-  display: swap;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Sans";
-  src: url("/font/UntitledSansWeb-RegularItalic.woff2") format("woff2");
-  display: swap;
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Sans";
-  src: url("/font/UntitledSansWeb-Medium.woff2") format("woff2");
-  display: swap;
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Sans";
-  src: url("/font/UntitledSansWeb-Bold.woff2") format("woff2");
-  display: swap;
-  font-weight: 700;
-  font-style: normal;
-}
-
 .blockquote {
   font-style: italic;
 }
@@ -81,6 +43,14 @@
   --ifm-color-primary-lightest: #e9d6cb;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --size-step--1: clamp(0.83rem, calc(0.82rem + 0.08vw), 0.88rem);
+  --size-step-0: clamp(1rem,0.92rem + 0.39vw,1rem);
+  --size-step-1: clamp(1.1875rem,1.05rem + 0.68vw,1.625rem);
+  --size-step-2: clamp(1.4375rem,1.11rem + 1.65vw,2.5rem);
+  --size-step-3: clamp(1.75rem,1.19rem + 2.82vw,3.5625rem);
+  --size-step-4: clamp(2.0625rem,1.15rem + 4.56vw,5rem);
+  --size-step-5: clamp(2.5rem,1.08rem + 7.09vw,7.0625rem);
+  --size-step-6: clamp(3rem,0.84rem + 10.78vw,9.9375rem);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -93,4 +63,12 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --size-step--1: clamp(0.83rem, calc(0.82rem + 0.08vw), 0.88rem);
+  --size-step-0: clamp(1rem,0.92rem + 0.39vw,1rem);
+  --size-step-1: clamp(1.1875rem,1.05rem + 0.68vw,1.625rem);
+  --size-step-2: clamp(1.4375rem,1.11rem + 1.65vw,2.5rem);
+  --size-step-3: clamp(1.75rem,1.19rem + 2.82vw,3.5625rem);
+  --size-step-4: clamp(2.0625rem,1.15rem + 4.56vw,5rem);
+  --size-step-5: clamp(2.5rem,1.08rem + 7.09vw,7.0625rem);
+  --size-step-6: clamp(3rem,0.84rem + 10.78vw,9.9375rem);
 }
