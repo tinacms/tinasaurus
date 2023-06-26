@@ -30,11 +30,6 @@
             "_template": "external"
           },
           {
-            "label": "Discord",
-            "href": "https://discordapp.com/invite/docusaurus",
-            "_template": "external"
-          },
-          {
             "label": "Twitter",
             "href": "https://twitter.com/docusaurus",
             "_template": "external"
