@@ -17,7 +17,7 @@
     "alt": "Tina",
     "src": "/img/tina-icon.svg"
   },
-  "title": "Scripturesaurus",
+  "title": "Gospel Exploder",
   "footer": {
     "style": "dark",
     "links": [
@@ -53,5 +53,6 @@
     ],
     "copyright": "My Project, Inc. Built with Docusaurus."
   },
-  "url": "https://tinasaurus.vercel.app/"
+  "url": "https://tinasaurus.vercel.app/",
+  "tagline": "Breaking apart Tim Keller's sermons into atomic essays to discover how the gospel changes everything. "
 }
