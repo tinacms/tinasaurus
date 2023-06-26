@@ -3,7 +3,8 @@
   "items": [
     {
       "title": "Bible: The Whole Story - Creation and Fall",
-      "link": "none",
+      "link": "doc",
+      "docLink": "docs/intro.mdx",
       "items": [
         {
           "document": "docs/The-History-of-the-World-in-a-Nutshell.mdx",
