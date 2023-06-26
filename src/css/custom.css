@@ -29,7 +29,7 @@
 }
 
 .blockquote {
-  font-style: italic;
+  font-style: italic !important;
 }
 
 :root {
