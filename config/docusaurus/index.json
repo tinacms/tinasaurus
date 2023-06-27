@@ -2,7 +2,7 @@
   "label": "Settings",
   "navbar": [
     {
-      "label": "Docs",
+      "label": "Bible",
       "link": "doc",
       "docLink": "docs/intro.mdx",
       "position": "left"
