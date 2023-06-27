@@ -4,8 +4,8 @@
   "description": "Description will go into a meta tag in <head />",
   "blocks": [
     {
-      "document": "docs/The-History-of-the-World-in-a-Nutshell.mdx",
-      "documentLabel": "Read a sermon summary",
+      "document": "docs/intro.mdx",
+      "documentLabel": "Browse the Bible",
       "_template": "hero"
     },
     {
