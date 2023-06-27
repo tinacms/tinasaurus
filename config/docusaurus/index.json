@@ -25,11 +25,6 @@
         "title": "Community",
         "items": [
           {
-            "label": "Stack Overflow",
-            "href": "https://stackoverflow.com/questions/tagged/docusaurus",
-            "_template": "external"
-          },
-          {
             "label": "Twitter",
             "href": "https://twitter.com/docusaurus",
             "_template": "external"
