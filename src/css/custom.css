@@ -31,6 +31,10 @@ blockquote {
   font-style: italic !important;
 }
 
+.hero__subtitle {
+    font-style: italic !important;
+}
+
 :root {
   --ifm-font-family-base: "Soehne",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   --ifm-color-primary: #3c585f;
