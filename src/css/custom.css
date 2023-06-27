@@ -6,6 +6,20 @@
 
 /* You can override the default Infima variables here. */
 
+@font-face {
+  font-family: "Serif";
+  src: url("/font/HeldaneTextWeb-Regular.woff2") format("woff2");
+  display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Serif";
+  src: url("/font/HeldaneTextWeb-RegularItalic.woff2") format("woff2");
+  display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
 
 @font-face {
   font-family: "Soehne";
