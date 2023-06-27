@@ -12,6 +12,7 @@
       "items": [
         {
           "document": "docs/The-History-of-the-World-in-a-Nutshell.mdx",
+          "label": "Genesis 1",
           "_template": "doc"
         }
       ],
