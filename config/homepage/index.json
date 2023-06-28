@@ -5,7 +5,7 @@
   "blocks": [
     {
       "document": "docs/intro.mdx",
-      "documentLabel": "Browse the Bible",
+      "documentLabel": "Explore the Bible",
       "_template": "hero"
     },
     {
