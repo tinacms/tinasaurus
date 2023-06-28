@@ -11,6 +11,11 @@
       "docLink": "docs/Bible-The-Whole-Story---Creation-and-Fall.mdx",
       "items": [
         {
+          "document": "docs/Before-the-Beginning.mdx",
+          "label": "Genesis 1:1-3",
+          "_template": "doc"
+        },
+        {
           "document": "docs/The-History-of-the-World-in-a-Nutshell.mdx",
           "label": "Genesis 1",
           "_template": "doc"
