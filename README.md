@@ -6,8 +6,12 @@
 ```
 $ npm install && npm run tina  
 ```
+Or
+```
+$ yarn && yarn tina  
+```
 
-This will install dependancies and open the website in your browser. 
+This will install dependencies and open the website in your browser. 
 
 Visit the CMS at [http://localhost:3000/admin](http://localhost:3000/admin) to start editing.
 
@@ -22,11 +26,21 @@ This website is built using [Docusaurus 2](https://docusaurus.io/) and [TinaCMS]
 ```
 $ npm install
 ```
+Or
+
+```
+$ yarn
+```
+
 
 ### Local Development
 
 ```
 $ npm run tina
+```
+Or
+```
+$ yarn tina  
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server. Go to the [Tina Admin](http://localhost:3000/admin) to start editing.
@@ -35,6 +49,10 @@ This command starts a local development server and opens up a browser window. Mo
 
 ```
 $ npm run build
+```
+Or
+```
+$ yarn build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
