@@ -22,6 +22,11 @@
         }
       ],
       "_template": "category"
+    },
+    {
+      "document": "docs/The-Gospel-of-Matthew.mdx",
+      "label": "Matthew",
+      "_template": "doc"
     }
   ]
 }
