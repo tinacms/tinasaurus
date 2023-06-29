@@ -5,11 +5,6 @@
       "title": "Matthew",
       "link": "doc",
       "docLink": "docs/The-Gospel-of-Matthew.mdx",
-      "items": [
-        {
-          "_template": "doc"
-        }
-      ],
       "_template": "category"
     },
     {
