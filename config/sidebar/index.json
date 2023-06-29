@@ -2,11 +2,6 @@
   "label": "Docs Sidebar",
   "items": [
     {
-      "title": "Acts",
-      "link": "none",
-      "_template": "category"
-    },
-    {
       "document": "docs/intro.mdx",
       "_template": "doc"
     },
@@ -23,6 +18,18 @@
         {
           "document": "docs/The-History-of-the-World-in-a-Nutshell.mdx",
           "label": "Genesis 1",
+          "_template": "doc"
+        }
+      ],
+      "_template": "category"
+    },
+    {
+      "title": "Acts",
+      "link": "none",
+      "items": [
+        {
+          "document": "docs/The-First-Miracle.mdx",
+          "label": "Acts 3:2–8, 13–23",
           "_template": "doc"
         }
       ],
