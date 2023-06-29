@@ -2,12 +2,6 @@
   "label": "Docs Sidebar",
   "items": [
     {
-      "title": "Matthew",
-      "link": "doc",
-      "docLink": "docs/The-Gospel-of-Matthew.mdx",
-      "_template": "category"
-    },
-    {
       "document": "docs/intro.mdx",
       "_template": "doc"
     },
