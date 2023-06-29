@@ -2,6 +2,11 @@
   "label": "Docs Sidebar",
   "items": [
     {
+      "title": "Acts",
+      "link": "none",
+      "_template": "category"
+    },
+    {
       "document": "docs/intro.mdx",
       "_template": "doc"
     },
