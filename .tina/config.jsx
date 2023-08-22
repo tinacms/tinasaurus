@@ -105,7 +105,7 @@ const PostCollection = {
       type: "string",
       required: true,
       ui: {
-        dateFormat: "MMM D, yyyy",
+        dateFormat: "MM DD, YYYY",
         component: "date",
         parse: (val) => {
           docusaurusDate(val);
