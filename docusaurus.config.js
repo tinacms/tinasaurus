@@ -88,7 +88,7 @@ const formatNavbarItem = (item, subnav = false) => {
 const config = {
   title: docusaurusData.title || "My Site",
   tagline: docusaurusData.tagline || "Dinosaurs are cool",
-  url: docusaurusData.url || "https://tinasaurus.vercel.app/",
+  url: docusaurusData.url || "https://d15taxi.ie/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
