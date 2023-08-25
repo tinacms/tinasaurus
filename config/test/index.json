@@ -1,5 +1,5 @@
 {
-  "label": "Homepage",
+  "label": "test",
   "title": "Hello from Tina + Docusaurus!",
   "description": "Description will go into a meta tag in <head />",
   "blocks": [
@@ -7,23 +7,28 @@
       "document": "docs/intro.mdx",
       "documentLabel": "Docusaurus Tutorial - 5min ⏱️",
       "_template": "hero"
-    },    
+    },
+    {
+      "document": "docs/intro.mdx",
+      "documentLabel": "Docusaurus Tutorial - 5min ⏱️",
+      "_template": "hero1"
+    },
     {
       "items": [
         {
           "title": "Easy to Use",
           "description": "Docusaurus was designed from the ground up to be easily installed and         used to get your website up and running quickly.\n",
-          "image": "/img/undraw_yoga_re_i5ld.svg"
+          "image": "/img/undraw_docusaurus_mountain.svg"
         },
         {
           "title": "Focus on What Matters",
           "description": "Docusaurus lets you focus on your docs, and we'll do the chores. Go ahead and move your docs into the docs directory.\n",
-          "image": "/img/undraw_mindfulness_8gqa.svg"
+          "image": "/img/undraw_docusaurus_tree.svg"
         },
         {
           "title": "Powered by React",
           "description": "Extend or customize your website layout by reusing React. Docusaurus can         be extended while reusing the same header and footer.\n",
-          "image": "/img/undraw_meditation_re_gll0.svg"
+          "image": "/img/undraw_docusaurus_react.svg"
         }
       ],
       "_template": "features"

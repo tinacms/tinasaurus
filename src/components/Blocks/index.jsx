@@ -2,6 +2,8 @@ import React from "react";
 import { Features } from "../Features";
 import { Hero } from "../Hero";
 
+/* import Block from "../../components/BlockComponent"; */
+
 export const Blocks = ({ blocks }) => {
   return (
     <>
@@ -18,8 +20,13 @@ export const Blocks = ({ blocks }) => {
                 return (
                   <div data-tinafield={`blocks.${i}`} key={i + block._template}>
                     <Features data={block} index={i} />
+
+                   {/*  <Block/>
+                    <Block/> */}
+                   
                   </div>
                 );
+               
               default:
                 return null;
             }

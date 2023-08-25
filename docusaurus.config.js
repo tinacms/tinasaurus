@@ -65,6 +65,7 @@ const formatNavbarItem = (item, subnav = false) => {
     navItem.to = "/blog";
   }
 
+ 
   if (item.link === "page" && item.pageLink) {
     navItem.to = getPageRoute(item.pageLink);
   }
@@ -86,7 +87,7 @@ const formatNavbarItem = (item, subnav = false) => {
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: docusaurusData.title || "My Site",
+  title: docusaurusData.title || "Yoga Moving Meditation",
   tagline: docusaurusData.tagline || "Dinosaurs are cool",
   url: docusaurusData.url || "https://d15taxi.ie/",
   baseUrl: "/",
@@ -125,14 +126,14 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: docusaurusData.title || "",
+        title: docusaurusData.title || "Yoga Moving Meditation",
         logo: {
           alt: docusaurusData?.logo?.alt
             ? docusaurusData?.logo?.alt
             : "My Logo",
           src: docusaurusData?.logo?.src
             ? docusaurusData?.logo?.src
-            : "img/logo.svg",
+            : "img/a.svg",
         },
         items: docusaurusData.navbar.map((item) => {
           return formatNavbarItem(item);

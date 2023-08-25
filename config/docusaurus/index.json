@@ -20,6 +20,13 @@
       "position": "left"
     },
     {
+      "label": "MDX Page Copy",
+      "link": "page",
+      "docLink": "src/pages/test.mdx",
+      "pageLink": "src/pages/test.mdx",
+      "position": "left"
+    },
+    {
       "label": "Docusaurus GitHub",
       "link": "external",
       "externalLink": "https://github.com/facebook/docusaurus",
@@ -34,9 +41,9 @@
   ],
   "logo": {
     "alt": "Tina",
-    "src": "/img/tina-icon.svg"
+    "src": "/img/a.svg"
   },
-  "title": "Tinasaurus",
+  "title": "Yoga Moving Meditation",
   "footer": {
     "style": "dark",
     "links": [
