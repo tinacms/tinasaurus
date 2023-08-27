@@ -8,6 +8,8 @@ import Header from "../components/Header";  */
 
 const pageData = require("../../config/homepage/index.json");
 
+const pageData = require("../../config/test/index.json");
+
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
 

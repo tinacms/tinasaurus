@@ -7,12 +7,7 @@
       "document": "docs/intro.mdx",
       "documentLabel": "Docusaurus Tutorial - 5min ⏱️",
       "_template": "hero"
-    },
-    {
-      "document": "docs/intro.mdx",
-      "documentLabel": "Docusaurus Tutorial - 5min ⏱️",
-      "_template": "hero1"
-    },
+    },    
     {
       "items": [
         {
