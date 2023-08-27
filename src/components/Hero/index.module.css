@@ -9,7 +9,7 @@
   position: relative;
   overflow: hidden;
   color: #f2f0f0;
-  background-image: url("C:/Users/Thomas/Desktop/asite/tinasaurus/static/img/Village-at-Night-1.webp");
+  background-image: url("/img/Village-at-Night-1.webp");
   background-size: cover; /* Adjust the sizing as needed */
   background-repeat: no-repeat; /* Adjust the repetition as needed */
 }
