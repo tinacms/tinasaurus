@@ -2,6 +2,12 @@
   "label": "Settings",
   "navbar": [
     {
+      "label": "sara",
+      "link": "page",
+      "pageLink": "src/pages/sarahnew.mdx",
+      "position": "left"
+    },
+    {
       "label": "Docs",
       "link": "doc",
       "docLink": "docs/intro.mdx",
