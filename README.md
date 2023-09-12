@@ -1,17 +1,18 @@
-[![Tinasaurus Demo](https://res.cloudinary.com/forestry-demo/image/upload/v1677522334/tina-io/blog/tinacms-docusaurus-markdown-editing.gif 'Tinasaurus Overview Video')](https://www.youtube.com/watch?v=2bHBwM54UB8)
-
+[![Tinasaurus Demo](https://res.cloudinary.com/forestry-demo/image/upload/v1677522334/tina-io/blog/tinacms-docusaurus-markdown-editing.gif "Tinasaurus Overview Video")](https://www.youtube.com/watch?v=2bHBwM54UB8)
 
 ## Quickstart With Tina
 
 ```
-$ npm install && npm run tina  
-```
-Or
-```
-$ yarn && yarn tina  
+$ npm install && npm run tina
 ```
 
-This will install dependencies and open the website in your browser. 
+Or
+
+```
+$ yarn && yarn tina
+```
+
+This will install dependencies and open the website in your browser.
 
 Visit the CMS at [http://localhost:3000/admin](http://localhost:3000/admin) to start editing.
 
@@ -26,21 +27,23 @@ This website is built using [Docusaurus 2](https://docusaurus.io/) and [TinaCMS]
 ```
 $ npm install
 ```
+
 Or
 
 ```
 $ yarn
 ```
 
-
 ### Local Development
 
 ```
 $ npm run tina
 ```
+
 Or
+
 ```
-$ yarn tina  
+$ yarn tina
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server. Go to the [Tina Admin](http://localhost:3000/admin) to start editing.
@@ -50,7 +53,9 @@ This command starts a local development server and opens up a browser window. Mo
 ```
 $ npm run build
 ```
+
 Or
+
 ```
 $ yarn build
 ```
