@@ -1,121 +1,122 @@
-const docusaurusData = require("./config/docusaurus/index.json");
+const docusaurusData = require('./config/docusaurus/index.json')
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const { themes } = require('prism-react-renderer')
+const lightTheme = themes.github
+const darkTheme = themes.dracula
 
 const getDocId = (doc) => {
   return doc
-    .replace(/\.mdx?$/, "")
-    .split("/")
+    .replace(/\.mdx?$/, '')
+    .split('/')
     .slice(1)
-    .join("/");
-};
+    .join('/')
+}
 
 const getPageRoute = (page) => {
   return page
-    .replace(/\.mdx?$/, "")
-    .split("/")
+    .replace(/\.mdx?$/, '')
+    .split('/')
     .slice(2)
-    .join("/");
-};
+    .join('/')
+}
 
 const getPath = (page) => {
-  return page.replace(/\.mdx?$/, "");
-};
+  return page.replace(/\.mdx?$/, '')
+}
 
 const formatFooterItem = (item) => {
   if (item.title) {
     return {
       title: item.title,
       items: item.items.map((subItem) => {
-        return formatFooterItem(subItem);
+        return formatFooterItem(subItem)
       }),
-    };
+    }
   } else {
     let linkObject = {
       label: item.label,
-    };
-
-    if (item.to) {
-      linkObject.to = getPath(item.to);
-    } else if (item.href) {
-      linkObject.href = item.href;
-    } else {
-      linkObject.to = "/blog";
     }
 
-    return linkObject;
+    if (item.to) {
+      linkObject.to = getPath(item.to)
+    } else if (item.href) {
+      linkObject.href = item.href
+    } else {
+      linkObject.to = '/blog'
+    }
+
+    return linkObject
   }
-};
+}
 
 const formatNavbarItem = (item, subnav = false) => {
   let navItem = {
     label: item.label,
-  };
+  }
 
   if (!subnav) {
-    navItem.position = item.position;
+    navItem.position = item.position
   }
 
-  if (item.link === "external" && item.externalLink) {
-    navItem.href = item.externalLink;
+  if (item.link === 'external' && item.externalLink) {
+    navItem.href = item.externalLink
   }
 
-  if (item.link === "blog") {
-    navItem.to = "/blog";
+  if (item.link === 'blog') {
+    navItem.to = '/blog'
   }
 
-  if (item.link === "page" && item.pageLink) {
-    navItem.to = getPageRoute(item.pageLink);
+  if (item.link === 'page' && item.pageLink) {
+    navItem.to = getPageRoute(item.pageLink)
   }
 
-  if (item.link === "doc" && item.docLink) {
-    navItem.type = "doc";
-    navItem.docId = getDocId(item.docLink);
+  if (item.link === 'doc' && item.docLink) {
+    navItem.type = 'doc'
+    navItem.docId = getDocId(item.docLink)
   }
 
   if (item.items) {
-    navItem.type = "dropdown";
+    navItem.type = 'dropdown'
     navItem.items = item.items.map((subItem) => {
-      return formatNavbarItem(subItem, true);
-    });
+      return formatNavbarItem(subItem, true)
+    })
   }
 
-  return navItem;
-};
+  return navItem
+}
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: docusaurusData.title || "My Site",
-  tagline: docusaurusData.tagline || "Dinosaurs are cool",
-  url: docusaurusData.url || "https://tinasaurus.vercel.app/",
-  baseUrl: "/",
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  title: docusaurusData.title || 'My Site',
+  tagline: docusaurusData.tagline || 'Dinosaurs are cool',
+  url: docusaurusData.url || 'https://tinasaurus.vercel.app/',
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
     [
-      "classic",
+      'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: docusaurusData.url + "/admin/#/collections/doc",
+          sidebarPath: require.resolve('./sidebars.js'),
+          editUrl: docusaurusData.url + '/admin/#/collections/doc',
         },
         blog: {
           showReadingTime: true,
-          editUrl: docusaurusData.url + "/admin/#/collections/post",
+          editUrl: docusaurusData.url + '/admin/#/collections/post',
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
@@ -125,33 +126,34 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: docusaurusData.title || "",
+        title: docusaurusData.title || '',
         logo: {
           alt: docusaurusData?.logo?.alt
             ? docusaurusData?.logo?.alt
-            : "My Logo",
+            : 'My Logo',
           src: docusaurusData?.logo?.src
             ? docusaurusData?.logo?.src
-            : "img/logo.svg",
+            : 'img/logo.svg',
         },
         items: docusaurusData.navbar.map((item) => {
-          return formatNavbarItem(item);
+          return formatNavbarItem(item)
         }),
       },
       footer: {
-        style: docusaurusData.footer?.style || "dark",
+        style: docusaurusData.footer?.style || 'dark',
         links: docusaurusData.footer?.links.map((item) => {
-          return formatFooterItem(item);
+          return formatFooterItem(item)
         }),
         copyright:
           `Copyright © ${new Date().getFullYear()} ` +
           (docusaurusData.footer?.copyright || docusaurusData.title),
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: lightTheme,
+        darkTheme: darkTheme,
+        additionalLanguages: ['bash', 'diff', 'json'],
       },
     }),
-};
+}
 
-module.exports = config;
+module.exports = config
