@@ -1,6 +1,7 @@
 import React from "react";
 import { Features } from "../Features";
 import { Hero } from "../Hero";
+import { YouTubeEmbed } from "../YouTubeEmbed";
 
 export const Blocks = ({ blocks }) => {
   return (
@@ -18,6 +19,12 @@ export const Blocks = ({ blocks }) => {
                 return (
                   <div data-tinafield={`blocks.${i}`} key={i + block._template}>
                     <Features data={block} index={i} />
+                  </div>
+                );
+              case "youTubeEmbed":
+                return (
+                  <div data-tinafield={`blocks.${i}`} key={i + block._template}>
+                    <YouTubeEmbed data={block} index={i} />
                   </div>
                 );
               default:

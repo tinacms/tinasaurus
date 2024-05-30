@@ -27,6 +27,11 @@
         }
       ],
       "_template": "features"
+    },
+    {
+      "title": "Watch the demo",
+      "url": "https://www.youtube.com/watch?v=2bHBwM54UB8",
+      "_template": "youTubeEmbed"
     }
   ]
 }
