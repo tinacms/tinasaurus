@@ -41,7 +41,7 @@
     ]
   },
   "engines": {
-    "node": ">=18.0"
+    "node": ">=20.0"
   },
   "packageManager": "yarn@3.8.3+sha256.80da90fb3e01be3a5d851ed5290f86800870a208614a2e4211a3bfb5cdb62d61"
 }
