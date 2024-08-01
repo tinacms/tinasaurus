@@ -64,4 +64,4 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
-To deploy to production and support editing on your live website (at **your-domain.com/admin**), you can follow the steps from [Tina's docs](https://tina.io/docs/forestry/migrate/#deploy-tina-to-your-site).
+To deploy to production and support editing on your live website (at **your-domain.com/admin**), you can follow the steps from [Tina's docs to get it running on TinaCloud](https://tina.io/docs/tina-cloud/overview/).
