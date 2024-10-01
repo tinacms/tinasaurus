@@ -6,6 +6,7 @@
     "tina": "tinacms dev -c \"yarn start\" ",
     "start": "docusaurus start",
     "build": "tinacms build && docusaurus build",
+    "build-local": "tinacms build --local && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -41,6 +42,6 @@
     ]
   },
   "engines": {
-    "node": ">=20.0"
+    "node": ">=18.0"
   }
 }
