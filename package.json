@@ -6,7 +6,7 @@
     "tina": "tinacms dev -c \"yarn start\" ",
     "start": "docusaurus start",
     "build": "tinacms build && docusaurus build",
-    "build-local": "tinacms build --local && docusaurus build",
+    "build-local": "tinacms build --local --skip-indexing --skip-cloud-checks && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
