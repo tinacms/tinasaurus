@@ -18,7 +18,6 @@
     "@docusaurus/core": "3.3.2",
     "@docusaurus/preset-classic": "3.3.2",
     "@mdx-js/react": "^3.1.0",
-    "@tinacms/cli": "^1.6.12",
     "clsx": "^2.1.1",
     "prism-react-renderer": "^2.4.0",
     "react": "^18.3.1",
@@ -27,7 +26,8 @@
     "title": "^3.5.3"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.3.2"
+    "@docusaurus/module-type-aliases": "3.3.2",
+    "@tinacms/cli": "^1.6.12"
   },
   "browserslist": {
     "production": [
@@ -44,5 +44,5 @@
   "engines": {
     "node": ">=18.0"
   },
-  "packageManager": "yarn@3.8.3"
+  "packageManager": "yarn@1.22.19"
 }
