@@ -105,7 +105,7 @@ const config = {
     [
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: docusaurusData.url + "/admin/#/collections/doc",
@@ -117,13 +117,13 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
-      }),
+      },
     ],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    {
       navbar: {
         title: docusaurusData.title || "",
         logo: {
@@ -151,7 +151,16 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-    }),
+    },
+  plugins: [
+    [
+      "docusaurus-plugin-dotenv",
+      {
+        path: "./.env.local",
+        systemvars: true,
+      },
+    ],
+  ],
 };
 
 module.exports = config;
