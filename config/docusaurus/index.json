@@ -1,0 +1,91 @@
+{
+  "label": "Settings",
+  "navbar": [
+    {
+      "label": "Docs",
+      "link": "doc",
+      "docLink": "docs/intro.mdx",
+      "position": "left"
+    },
+    {
+      "label": "Blog",
+      "link": "blog",
+      "position": "left"
+    },
+    {
+      "label": "MDX Page",
+      "link": "page",
+      "docLink": "src/pages/Test-MDX-Page.mdx",
+      "pageLink": "src/pages/Test-MDX-Page.mdx",
+      "position": "left"
+    },
+    {
+      "label": "Docusaurus GitHub",
+      "link": "external",
+      "externalLink": "https://github.com/facebook/docusaurus",
+      "position": "right"
+    },
+    {
+      "label": "Tina",
+      "link": "external",
+      "externalLink": "https://tina.io/",
+      "position": "right"
+    }
+  ],
+  "logo": {
+    "alt": "Tina",
+    "src": "/img/tina-icon.svg"
+  },
+  "title": "Tinasaurus",
+  "footer": {
+    "style": "dark",
+    "links": [
+      {
+        "title": "Docs",
+        "items": [
+          {
+            "label": "Introduction",
+            "to": "docs/intro.mdx",
+            "_template": "internal"
+          }
+        ]
+      },
+      {
+        "title": "Community",
+        "items": [
+          {
+            "label": "Stack Overflow",
+            "href": "https://stackoverflow.com/questions/tagged/docusaurus",
+            "_template": "external"
+          },
+          {
+            "label": "Discord",
+            "href": "https://discordapp.com/invite/docusaurus",
+            "_template": "external"
+          },
+          {
+            "label": "Twitter",
+            "href": "https://twitter.com/docusaurus",
+            "_template": "external"
+          }
+        ]
+      },
+      {
+        "title": "More",
+        "items": [
+          {
+            "label": "Blog",
+            "_template": "blog"
+          },
+          {
+            "label": "GitHub",
+            "href": "https://github.com/facebook/docusaurus",
+            "_template": "external"
+          }
+        ]
+      }
+    ],
+    "copyright": "My Project, Inc. Built with Docusaurus."
+  },
+  "url": "https://tinasaurus.vercel.app/"
+}
