@@ -3109,7 +3109,7 @@
     typescript "^5.6.3"
     zod "^3.23.8"
 
-"@tinacms/cli@^1.6.12":
+"@tinacms/cli@^1.7.0":
   version "1.7.0"
   resolved "https://registry.npmmirror.com/@tinacms/cli/-/cli-1.7.0.tgz#c796a2703f2ab747dd64670996a2606baaafdd97"
   integrity sha512-mWHF+fAD+O6QEzQn8ksD6bBjC4txtrV54E6fSQoGaaeH1L9qZ7gwqRk4oeRtIf9tYOazaSg7BYymI0Uzd8ckGQ==
@@ -13124,7 +13124,7 @@ thunky@^1.0.2:
   resolved "https://registry.npmmirror.com/thunky/-/thunky-1.1.0.tgz#5abaf714a9405db0504732bbccd2cedd9ef9537d"
   integrity sha512-eHY7nBftgThBqOyHGVN+l8gF0BucP09fMo0oO/Lb0w1OF80dJv+lDVpXG60WMQvkcxAkNybKsrEIE3ZtKGmPrA==
 
-tinacms@2.5.2, tinacms@^2.5.0:
+tinacms@2.5.2, tinacms@^2.5.2:
   version "2.5.2"
   resolved "https://registry.npmmirror.com/tinacms/-/tinacms-2.5.2.tgz#724ab5f9df588372955b1a9aaa183a1faa373f80"
   integrity sha512-4hezJBh3e7v64sjNHsP/ngIgCLoe6TM+ihWzZn3WKMlglJeklLjjU23Okk9KtzAdj60C/J3/mpTWW8pTzz/9CQ==

@@ -12,7 +12,7 @@ import title from "title";
 const branch =
   process.env.VERCEL_GIT_COMMIT_REF ||
   process.env.HEAD ||
-  "main";
+  "update-versions";
 
 const WarningIcon = (props) => {
   return (
