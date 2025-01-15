@@ -3,7 +3,7 @@
   "items": [
     {
       "document": "docs/test-page.mdx",
-      "label": "Test section",
+      "label": "Test section 1",
       "_template": "doc"
     },
     {
