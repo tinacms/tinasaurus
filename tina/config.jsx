@@ -9,10 +9,7 @@ import { docusaurusDate, titleFromSlug } from "../util";
 import title from "title";
 
 // Your hosting provider likely exposes this as an environment variable
-const branch =
-  process.env.VERCEL_GIT_COMMIT_REF ||
-  process.env.HEAD ||
-  "main";
+const branch = process.env.VERCEL_GIT_COMMIT_REF || process.env.HEAD || "main";
 
 const WarningIcon = (props) => {
   return (
@@ -825,7 +822,7 @@ const PagesCollection = {
 export default defineConfig({
   branch,
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID, // Get this from tina.io
-  token: process.env.TINA_TOKEN, // Get this from tina.io
+  token: process.env.NEXT_PUBLIC_TINA_TOKEN, // Get this from tina.io
   build: {
     outputFolder: "admin",
     publicFolder: "static",
