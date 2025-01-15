@@ -9,7 +9,8 @@ import { docusaurusDate, titleFromSlug } from "../util";
 import title from "title";
 
 // Your hosting provider likely exposes this as an environment variable
-const branch = process.env.VERCEL_GIT_COMMIT_REF || process.env.HEAD || "main";
+const branch = "main";
+// const branch = process.env.VERCEL_GIT_COMMIT_REF || process.env.HEAD || "main";
 
 const WarningIcon = (props) => {
   return (
