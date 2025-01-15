@@ -2,6 +2,11 @@
   "label": "Docs Sidebar",
   "items": [
     {
+      "document": "docs/test-page.mdx",
+      "label": "Test section",
+      "_template": "doc"
+    },
+    {
       "document": "docs/intro.mdx",
       "_template": "doc"
     },
