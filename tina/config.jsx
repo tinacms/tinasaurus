@@ -12,6 +12,12 @@ import title from "title";
 const branch = "main";
 // const branch = process.env.VERCEL_GIT_COMMIT_REF || process.env.HEAD || "main";
 
+console.log(
+  "process.env.process.env.NEXT_PUBLIC_TINA_CLIENT_ID",
+  process.env.NEXT_PUBLIC_TINA_CLIENT_ID
+);
+console.log("process.env.TINA_TOKEN", process.env.NEXT_PUBLIC_TINA_TOKEN);
+
 const WarningIcon = (props) => {
   return (
     <svg
@@ -822,8 +828,8 @@ const PagesCollection = {
 
 export default defineConfig({
   branch,
-  clientId: process.env.VITE_TINA_CLIENT_ID, // Get this from tina.io
-  token: process.env.VITE_TINA_TOKEN, // Get this from tina.io
+  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID, // Get this from tina.io
+  token: process.env.NEXT_PUBLIC_TINA_TOKEN, // Get this from tina.io
   build: {
     outputFolder: "admin",
     publicFolder: "static",
