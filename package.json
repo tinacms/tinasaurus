@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "docusaurus": "docusaurus",
-    "tina": "tinacms dev -c \"yarn start\" ",
-    "start": "docusaurus start",
-    "build": "tinacms build && docusaurus build",
+    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"docusaurus start\"",
+    "build": "tinacms build --no-client-build-cache && docusaurus build",
+    "start": "docusaurus start",  
     "build-local": "tinacms build --local --skip-indexing --skip-cloud-checks && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
