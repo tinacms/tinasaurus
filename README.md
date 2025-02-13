@@ -3,13 +3,13 @@
 ## Quickstart With Tina
 
 ```
-$ npm install && npm run tina
+$ npm install && npm run dev
 ```
 
 Or
 
 ```
-$ yarn && yarn tina
+$ yarn && yarn dev
 ```
 
 This will install dependencies and open the website in your browser.
@@ -37,13 +37,13 @@ $ yarn
 ### Local Development
 
 ```
-$ npm run tina
+$ npm run dev
 ```
 
 Or
 
 ```
-$ yarn tina
+$ yarn dev
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server. Go to the [Tina Admin](http://localhost:3000/admin) to start editing.
