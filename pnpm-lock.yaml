@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@docusaurus/core':
         specifier: 3.3.2
-        version: 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+        version: 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       '@docusaurus/preset-classic':
         specifier: 3.3.2
-        version: 3.3.2(@algolia/client-search@5.20.2)(@types/react@19.0.8)(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.17.3)(typescript@5.7.3)
+        version: 3.3.2(@algolia/client-search@5.20.2)(@types/react@19.0.8)(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.17.3)(typescript@5.7.3)
       '@mdx-js/react':
         specifier: ^3.1.0
         version: 3.1.0(@types/react@19.0.8)(react@18.3.1)
       '@tinacms/cli':
-        specifier: ^1.8.4
-        version: 1.8.4(@babel/core@7.26.8)(@codemirror/language@6.0.0)(@types/node@22.13.1)(@types/react@19.0.8)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@3.29.5)(scheduler@0.23.2)(sucrase@3.35.0)(terser@5.38.2)
+        specifier: ^1.9.0
+        version: 1.9.0(@babel/core@7.26.8)(@codemirror/language@6.0.0)(@types/node@22.13.1)(@types/react@19.0.8)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@3.29.5)(scheduler@0.23.2)(sucrase@3.35.0)(terser@5.38.2)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -33,15 +33,15 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       tinacms:
-        specifier: ^2.6.4
-        version: 2.6.4(@types/react@19.0.8)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.7.3)
+        specifier: ^2.7.0
+        version: 2.7.0(@types/react@19.0.8)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.7.3)
       title:
         specifier: ^3.5.3
         version: 3.5.3
     devDependencies:
       '@docusaurus/module-type-aliases':
         specifier: 3.3.2
-        version: 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
 packages:
 
@@ -2211,32 +2211,32 @@ packages:
   '@tanstack/virtual-core@3.13.0':
     resolution: {integrity: sha512-NBKJP3OIdmZY3COJdWkSonr50FMVIi+aj5ZJ7hI/DTpEKg2RMfo/KvP8A3B/zOSpMgIe52B5E2yn7rryULzA6g==}
 
-  '@tinacms/app@2.1.19':
-    resolution: {integrity: sha512-apChryDQ77/C3MWwQVpp0DmeMoPxrl5Idn7wjBbUZPikVbv/1pW8dnB4kne94KEnjinEdUwYLF3Mn+OyzLau4Q==}
+  '@tinacms/app@2.2.0':
+    resolution: {integrity: sha512-+9+QFdryVBH9WerJT4bjLpAmu0eljDQFVBz5nxYULCtFEDrrTGEQq8oMnnQPL2NJgb/g6cp/YYMFtoQmf4RvPw==}
 
-  '@tinacms/cli@1.8.4':
-    resolution: {integrity: sha512-/v19hNMNekP6mjrYzPXV/xe5X1j/4Qy0FGUmxykUfo5Z5ivQLBIcQVBQqhcuflqBHY3wLS7N/YL/3M12x/vY3A==}
+  '@tinacms/cli@1.9.0':
+    resolution: {integrity: sha512-4c40FCi38yBBhUFFsktpZOA3PuwzgOaab07JudsdbzBejHbs1Ez4GhfpQnpT1snfi+/KHzie+szbzBeXeIqN8A==}
     hasBin: true
 
-  '@tinacms/graphql@1.5.12':
-    resolution: {integrity: sha512-hHTwbfwuleor396U6a5XfzeZOWOSb+PFhaCwv/Je5hMHnwZqBh1n/pODzQ/xLC3PW0WiQ5T3MYUqSciWUQOC5Q==}
+  '@tinacms/graphql@1.5.13':
+    resolution: {integrity: sha512-0z3CN3R6AcIMN9USyHgQ3ds4Jhb1rOKmZUazChzJBJa0LiHJOZl76YITYoMtmNJ4mbF2Vn9scHpQrar4FKIb3w==}
 
-  '@tinacms/mdx@1.5.4':
-    resolution: {integrity: sha512-eVBE/XKs8fyr98sGFVilqiXAgIlKSoyF4F4y/WcR7pQyqUh+9i64ncZVAlH/jRJSl1wQKrHCYReafgTk4DBhWg==}
+  '@tinacms/mdx@1.6.0':
+    resolution: {integrity: sha512-xiJj5dVvt3ro8bbQCiL2eqQS8G8kSTEME9UVkY60B3ugxyznybrOnbJGuen1Yl06V7mFpbhAkUNDekMnQ3NBWw==}
 
-  '@tinacms/metrics@1.0.8':
-    resolution: {integrity: sha512-MqY4y5viLE9Thwzj0EEaDa85oFnCbDpZW+ELY4s+e8zKvmqFPi8ba3GYPdjFqvXnxrAuYlSW1My058xKykXlEQ==}
+  '@tinacms/metrics@1.0.9':
+    resolution: {integrity: sha512-Jjy1s2RidFchw15X4Jfy9IbGfGQpAPSX+Dtsby7TvuwSaPpNKYNCfmRJHn5BWSE7TEjZaaRTcJ5kDQDPWNnBMA==}
     peerDependencies:
       fs-extra: ^9.0.1
 
-  '@tinacms/schema-tools@1.7.0':
-    resolution: {integrity: sha512-gYBcZHsfFlXj+VN5v41scOYoQAqf0spmoHhicsllPy3jkhZgrFCU/JZPE680EaXxUqNJ+nPdNlhaeULYkLVlAA==}
+  '@tinacms/schema-tools@1.7.1':
+    resolution: {integrity: sha512-aTGosUSnB63cUsZQxt3gHcGiLO+U+vN0jYj8fuKUceXFAYICBXdAp4luvpForANja187cs9PyOZeB7e5BJDjQw==}
     peerDependencies:
       react: '>=16.14.0'
       yup: ^0.32.0
 
-  '@tinacms/search@1.0.39':
-    resolution: {integrity: sha512-jxSYLEa+vMuP8m9zU2zazzZ765R4epPlTLa16+tI2vGxDvHlJ4wLG+wmwfUICbdKps9wIbYTaybzQy6NC8jWeA==}
+  '@tinacms/search@1.0.40':
+    resolution: {integrity: sha512-ZknY3cMI2Q9Cv8yZTnUd7Yu6a0fbgcQ/2ThbCjlVbFOvo85Thf2F6ivOs/RKEeP6nurz028Ak72QypDyBeBzSA==}
 
   '@trysound/sax@0.2.0':
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
@@ -3523,7 +3523,7 @@ packages:
     peerDependencies:
       '@codemirror/language': 6.0.0
       codemirror: ^5.65.3
-      graphql: ^15.5.0 || ^16.0.0 || ^17.0.0
+      graphql: ^15.10.1
 
   codemirror@5.65.18:
     resolution: {integrity: sha512-Gaz4gHnkbHMGgahNt3CA5HBk5lLQBqmD/pBgeB4kQU6OedZmqMBjlRF0LSrp2tJ4wlLNPm2FfaUd1pDy0mdlpA==}
@@ -7666,8 +7666,8 @@ packages:
   thunky@1.1.0:
     resolution: {integrity: sha512-eHY7nBftgThBqOyHGVN+l8gF0BucP09fMo0oO/Lb0w1OF80dJv+lDVpXG60WMQvkcxAkNybKsrEIE3ZtKGmPrA==}
 
-  tinacms@2.6.4:
-    resolution: {integrity: sha512-lQMZKbs/CS9YQmS5ZUP3UKKDY+31y7SLoiUZXfTCnvoJjXzbD6nQScZMy7m+qS/fO2uwDPlcdOEJnmoP8aXJAA==}
+  tinacms@2.7.0:
+    resolution: {integrity: sha512-ujtAQYHEZgyobgCiR4jqxLJq4CGHtcWMwFurrVJWBygq+wJ+TsQOnwIP7Ddu1CN2mlGgGbKEsjsJ4IYaMIEDmg==}
     peerDependencies:
       react: '>=16.14.0'
       react-dom: '>=16.14.0'
@@ -9346,7 +9346,7 @@ snapshots:
     transitivePeerDependencies:
       - '@algolia/client-search'
 
-  '@docusaurus/core@3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@docusaurus/core@3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
       '@babel/core': 7.26.8
       '@babel/generator': 7.26.8
@@ -9360,10 +9360,10 @@ snapshots:
       '@babel/traverse': 7.26.8
       '@docusaurus/cssnano-preset': 3.3.2
       '@docusaurus/logger': 3.3.2
-      '@docusaurus/mdx-loader': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
-      '@docusaurus/utils-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
-      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/mdx-loader': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/utils-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
       autoprefixer: 10.4.20(postcss@8.5.2)
       babel-loader: 9.2.1(@babel/core@7.26.8)(webpack@5.97.1)
       babel-plugin-dynamic-import-node: 2.3.3
@@ -9450,12 +9450,12 @@ snapshots:
       chalk: 4.1.2
       tslib: 2.8.1
 
-  '@docusaurus/mdx-loader@3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@docusaurus/mdx-loader@3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
       '@docusaurus/logger': 3.3.2
-      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
-      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
-      '@mdx-js/mdx': 3.1.0(acorn@8.8.2)
+      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@mdx-js/mdx': 3.1.0(acorn@8.14.0)
       '@slorber/remark-comment': 1.0.0
       escape-html: 1.0.3
       estree-util-value-to-estree: 3.3.2
@@ -9488,9 +9488,9 @@ snapshots:
       - uglify-js
       - webpack-cli
 
-  '@docusaurus/module-type-aliases@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@docusaurus/module-type-aliases@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@docusaurus/types': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@docusaurus/types': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/history': 4.7.11
       '@types/react': 19.0.8
       '@types/react-router-config': 5.0.11
@@ -9507,15 +9507,15 @@ snapshots:
       - uglify-js
       - webpack-cli
 
-  '@docusaurus/plugin-content-blog@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@docusaurus/plugin-content-blog@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       '@docusaurus/logger': 3.3.2
-      '@docusaurus/mdx-loader': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/types': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
-      '@docusaurus/utils-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
-      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/mdx-loader': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/types': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/utils-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
       cheerio: 1.0.0
       feed: 4.2.2
       fs-extra: 11.3.0
@@ -9547,16 +9547,16 @@ snapshots:
       - vue-template-compiler
       - webpack-cli
 
-  '@docusaurus/plugin-content-docs@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@docusaurus/plugin-content-docs@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       '@docusaurus/logger': 3.3.2
-      '@docusaurus/mdx-loader': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/module-type-aliases': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@docusaurus/types': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
-      '@docusaurus/utils-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
-      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/mdx-loader': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/module-type-aliases': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@docusaurus/types': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/utils-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
       '@types/react-router-config': 5.0.11
       combine-promises: 1.2.0
       fs-extra: 11.3.0
@@ -9586,13 +9586,13 @@ snapshots:
       - vue-template-compiler
       - webpack-cli
 
-  '@docusaurus/plugin-content-pages@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@docusaurus/plugin-content-pages@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/mdx-loader': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/types': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
-      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/mdx-loader': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/types': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
       fs-extra: 11.3.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -9617,11 +9617,11 @@ snapshots:
       - vue-template-compiler
       - webpack-cli
 
-  '@docusaurus/plugin-debug@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@docusaurus/plugin-debug@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/types': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/types': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
       fs-extra: 11.3.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -9646,11 +9646,11 @@ snapshots:
       - vue-template-compiler
       - webpack-cli
 
-  '@docusaurus/plugin-google-analytics@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@docusaurus/plugin-google-analytics@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/types': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/types': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       tslib: 2.8.1
@@ -9673,11 +9673,11 @@ snapshots:
       - vue-template-compiler
       - webpack-cli
 
-  '@docusaurus/plugin-google-gtag@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@docusaurus/plugin-google-gtag@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/types': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/types': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
       '@types/gtag.js': 0.0.12
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -9701,11 +9701,11 @@ snapshots:
       - vue-template-compiler
       - webpack-cli
 
-  '@docusaurus/plugin-google-tag-manager@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@docusaurus/plugin-google-tag-manager@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/types': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/types': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       tslib: 2.8.1
@@ -9728,14 +9728,14 @@ snapshots:
       - vue-template-compiler
       - webpack-cli
 
-  '@docusaurus/plugin-sitemap@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@docusaurus/plugin-sitemap@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       '@docusaurus/logger': 3.3.2
-      '@docusaurus/types': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
-      '@docusaurus/utils-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
-      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/types': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/utils-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
       fs-extra: 11.3.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -9760,21 +9760,21 @@ snapshots:
       - vue-template-compiler
       - webpack-cli
 
-  '@docusaurus/preset-classic@3.3.2(@algolia/client-search@5.20.2)(@types/react@19.0.8)(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.17.3)(typescript@5.7.3)':
+  '@docusaurus/preset-classic@3.3.2(@algolia/client-search@5.20.2)(@types/react@19.0.8)(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.17.3)(typescript@5.7.3)':
     dependencies:
-      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/plugin-content-blog': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/plugin-content-docs': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/plugin-content-pages': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/plugin-debug': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/plugin-google-analytics': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/plugin-google-gtag': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/plugin-google-tag-manager': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/plugin-sitemap': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/theme-classic': 3.3.2(@types/react@19.0.8)(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/theme-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/theme-search-algolia': 3.3.2(@algolia/client-search@5.20.2)(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@19.0.8)(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.17.3)(typescript@5.7.3)
-      '@docusaurus/types': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/plugin-content-blog': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/plugin-content-docs': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/plugin-content-pages': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/plugin-debug': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/plugin-google-analytics': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/plugin-google-gtag': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/plugin-google-tag-manager': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/plugin-sitemap': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/theme-classic': 3.3.2(@types/react@19.0.8)(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/theme-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/theme-search-algolia': 3.3.2(@algolia/client-search@5.20.2)(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@19.0.8)(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.17.3)(typescript@5.7.3)
+      '@docusaurus/types': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     transitivePeerDependencies:
@@ -9804,20 +9804,20 @@ snapshots:
       '@types/react': 19.0.8
       react: 18.3.1
 
-  '@docusaurus/theme-classic@3.3.2(@types/react@19.0.8)(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@docusaurus/theme-classic@3.3.2(@types/react@19.0.8)(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/mdx-loader': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/module-type-aliases': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@docusaurus/plugin-content-blog': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/plugin-content-docs': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/plugin-content-pages': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/theme-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/mdx-loader': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/module-type-aliases': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@docusaurus/plugin-content-blog': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/plugin-content-docs': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/plugin-content-pages': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/theme-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       '@docusaurus/theme-translations': 3.3.2
-      '@docusaurus/types': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
-      '@docusaurus/utils-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
-      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/types': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/utils-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
       '@mdx-js/react': 3.1.0(@types/react@19.0.8)(react@18.3.1)
       clsx: 2.1.1
       copy-text-to-clipboard: 3.2.0
@@ -9853,15 +9853,15 @@ snapshots:
       - vue-template-compiler
       - webpack-cli
 
-  '@docusaurus/theme-common@3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@docusaurus/theme-common@3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@docusaurus/mdx-loader': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/module-type-aliases': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@docusaurus/plugin-content-blog': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/plugin-content-docs': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/plugin-content-pages': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
-      '@docusaurus/utils-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@docusaurus/mdx-loader': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/module-type-aliases': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@docusaurus/plugin-content-blog': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/plugin-content-docs': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/plugin-content-pages': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/utils-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@types/history': 4.7.11
       '@types/react': 19.0.8
       '@types/react-router-config': 5.0.11
@@ -9892,16 +9892,16 @@ snapshots:
       - vue-template-compiler
       - webpack-cli
 
-  '@docusaurus/theme-search-algolia@3.3.2(@algolia/client-search@5.20.2)(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@19.0.8)(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.17.3)(typescript@5.7.3)':
+  '@docusaurus/theme-search-algolia@3.3.2(@algolia/client-search@5.20.2)(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@19.0.8)(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.17.3)(typescript@5.7.3)':
     dependencies:
       '@docsearch/react': 3.8.3(@algolia/client-search@5.20.2)(@types/react@19.0.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.17.3)
-      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/core': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       '@docusaurus/logger': 3.3.2
-      '@docusaurus/plugin-content-docs': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@docusaurus/theme-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/plugin-content-docs': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@docusaurus/theme-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       '@docusaurus/theme-translations': 3.3.2
-      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
-      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/utils-validation': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
       algoliasearch: 4.24.0
       algoliasearch-helper: 3.24.1(algoliasearch@4.24.0)
       clsx: 2.1.1
@@ -9940,9 +9940,9 @@ snapshots:
       fs-extra: 11.3.0
       tslib: 2.8.1
 
-  '@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@mdx-js/mdx': 3.1.0(acorn@8.8.2)
+      '@mdx-js/mdx': 3.1.0(acorn@8.14.0)
       '@types/history': 4.7.11
       '@types/react': 19.0.8
       commander: 5.1.0
@@ -9961,17 +9961,17 @@ snapshots:
       - uglify-js
       - webpack-cli
 
-  '@docusaurus/utils-common@3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
+  '@docusaurus/utils-common@3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       tslib: 2.8.1
     optionalDependencies:
-      '@docusaurus/types': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@docusaurus/types': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@docusaurus/utils-validation@3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)':
+  '@docusaurus/utils-validation@3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)':
     dependencies:
       '@docusaurus/logger': 3.3.2
-      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
-      '@docusaurus/utils-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@docusaurus/utils': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)
+      '@docusaurus/utils-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       joi: 17.13.3
       js-yaml: 4.1.0
       tslib: 2.8.1
@@ -9984,10 +9984,10 @@ snapshots:
       - uglify-js
       - webpack-cli
 
-  '@docusaurus/utils@3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)':
+  '@docusaurus/utils@3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.7.3)':
     dependencies:
       '@docusaurus/logger': 3.3.2
-      '@docusaurus/utils-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@docusaurus/utils-common': 3.3.2(@docusaurus/types@3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@svgr/webpack': 8.1.0(typescript@5.7.3)
       escape-string-regexp: 4.0.0
       file-loader: 6.2.0(webpack@5.97.1)
@@ -10006,7 +10006,7 @@ snapshots:
       url-loader: 4.1.1(file-loader@6.2.0(webpack@5.97.1))(webpack@5.97.1)
       webpack: 5.97.1
     optionalDependencies:
-      '@docusaurus/types': 3.3.2(acorn@8.8.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@docusaurus/types': 3.3.2(acorn@8.14.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
       - '@swc/core'
       - esbuild
@@ -10377,19 +10377,19 @@ snapshots:
     dependencies:
       '@graphql-tools/utils': 9.2.1(graphql@15.8.0)
       graphql: 15.8.0
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   '@graphql-tools/optimize@2.0.0(graphql@15.8.0)':
     dependencies:
       graphql: 15.8.0
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   '@graphql-tools/relay-operation-optimizer@7.0.14(@babel/core@7.26.8)(graphql@15.8.0)':
     dependencies:
       '@ardatan/relay-compiler': 12.0.1(@babel/core@7.26.8)(graphql@15.8.0)
       '@graphql-tools/utils': 10.8.1(graphql@15.8.0)
       graphql: 15.8.0
-      tslib: 2.6.3
+      tslib: 2.8.1
     transitivePeerDependencies:
       - '@babel/core'
       - encoding
@@ -10400,7 +10400,7 @@ snapshots:
       '@graphql-tools/merge': 8.4.2(graphql@15.8.0)
       '@graphql-tools/utils': 9.2.1(graphql@15.8.0)
       graphql: 15.8.0
-      tslib: 2.4.1
+      tslib: 2.8.1
       value-or-promise: 1.0.12
 
   '@graphql-tools/utils@10.8.1(graphql@15.8.0)':
@@ -10409,13 +10409,13 @@ snapshots:
       cross-inspect: 1.0.1
       dset: 3.1.4
       graphql: 15.8.0
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   '@graphql-tools/utils@9.2.1(graphql@15.8.0)':
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@15.8.0)
       graphql: 15.8.0
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   '@graphql-typed-document-node/core@3.2.0(graphql@15.8.0)':
     dependencies:
@@ -10521,7 +10521,7 @@ snapshots:
 
   '@marijn/find-cluster-break@1.0.2': {}
 
-  '@mdx-js/mdx@3.1.0(acorn@8.8.2)':
+  '@mdx-js/mdx@3.1.0(acorn@8.14.0)':
     dependencies:
       '@types/estree': 1.0.6
       '@types/estree-jsx': 1.0.5
@@ -10535,7 +10535,7 @@ snapshots:
       hast-util-to-jsx-runtime: 2.3.2
       markdown-extensions: 2.0.0
       recma-build-jsx: 1.0.0
-      recma-jsx: 1.0.0(acorn@8.8.2)
+      recma-jsx: 1.0.0(acorn@8.14.0)
       recma-stringify: 1.0.0
       rehype-recma: 1.0.0
       remark-mdx: 3.1.0
@@ -10566,7 +10566,7 @@ snapshots:
     dependencies:
       '@monaco-editor/loader': 1.4.0(monaco-editor@0.31.0)
       monaco-editor: 0.31.0
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
@@ -11250,13 +11250,13 @@ snapshots:
 
   '@tanstack/virtual-core@3.13.0': {}
 
-  '@tinacms/app@2.1.19(@codemirror/language@6.0.0)(@types/node@22.13.1)(@types/react@19.0.8)(abstract-level@1.0.4)(immer@10.1.1)(scheduler@0.23.2)(sucrase@3.35.0)(yup@1.6.1)':
+  '@tinacms/app@2.2.0(@codemirror/language@6.0.0)(@types/node@22.13.1)(@types/react@19.0.8)(abstract-level@1.0.4)(immer@10.1.1)(scheduler@0.23.2)(sucrase@3.35.0)(yup@1.6.1)':
     dependencies:
       '@graphiql/toolkit': 0.8.4(@types/node@22.13.1)(graphql@15.8.0)
       '@headlessui/react': 2.1.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@heroicons/react': 1.0.6(react@18.3.1)
       '@monaco-editor/react': 4.4.5(monaco-editor@0.31.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@tinacms/mdx': 1.5.4(react@18.3.1)(typescript@5.7.3)(yup@1.6.1)
+      '@tinacms/mdx': 1.6.0(react@18.3.1)(typescript@5.7.3)(yup@1.6.1)
       final-form: 4.20.10
       graphiql: 3.0.0-alpha.1(@codemirror/language@6.0.0)(@types/node@22.13.1)(@types/react@19.0.8)(graphql@15.8.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       graphql: 15.8.0
@@ -11264,7 +11264,7 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-router-dom: 6.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      tinacms: 2.6.4(@types/react@19.0.8)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.7.3)
+      tinacms: 2.7.0(@types/react@19.0.8)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.7.3)
       typescript: 5.7.3
       zod: 3.24.2
     transitivePeerDependencies:
@@ -11281,7 +11281,7 @@ snapshots:
       - supports-color
       - yup
 
-  '@tinacms/cli@1.8.4(@babel/core@7.26.8)(@codemirror/language@6.0.0)(@types/node@22.13.1)(@types/react@19.0.8)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@3.29.5)(scheduler@0.23.2)(sucrase@3.35.0)(terser@5.38.2)':
+  '@tinacms/cli@1.9.0(@babel/core@7.26.8)(@codemirror/language@6.0.0)(@types/node@22.13.1)(@types/react@19.0.8)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@3.29.5)(scheduler@0.23.2)(sucrase@3.35.0)(terser@5.38.2)':
     dependencies:
       '@graphql-codegen/core': 2.6.8(graphql@15.8.0)
       '@graphql-codegen/plugin-helpers': 5.1.0(graphql@15.8.0)
@@ -11296,13 +11296,14 @@ snapshots:
       '@tailwindcss/aspect-ratio': 0.4.2(tailwindcss@3.4.17)
       '@tailwindcss/container-queries': 0.1.1(tailwindcss@3.4.17)
       '@tailwindcss/typography': 0.5.16(tailwindcss@3.4.17)
-      '@tinacms/app': 2.1.19(@codemirror/language@6.0.0)(@types/node@22.13.1)(@types/react@19.0.8)(abstract-level@1.0.4)(immer@10.1.1)(scheduler@0.23.2)(sucrase@3.35.0)(yup@1.6.1)
-      '@tinacms/graphql': 1.5.12(react@18.3.1)(typescript@5.7.3)
-      '@tinacms/metrics': 1.0.8(fs-extra@11.3.0)
-      '@tinacms/schema-tools': 1.7.0(react@18.3.1)(yup@1.6.1)
-      '@tinacms/search': 1.0.39(abstract-level@1.0.4)(react@18.3.1)(sucrase@3.35.0)(typescript@5.7.3)(yup@1.6.1)
+      '@tinacms/app': 2.2.0(@codemirror/language@6.0.0)(@types/node@22.13.1)(@types/react@19.0.8)(abstract-level@1.0.4)(immer@10.1.1)(scheduler@0.23.2)(sucrase@3.35.0)(yup@1.6.1)
+      '@tinacms/graphql': 1.5.13(react@18.3.1)(typescript@5.7.3)
+      '@tinacms/metrics': 1.0.9(fs-extra@11.3.0)
+      '@tinacms/schema-tools': 1.7.1(react@18.3.1)(yup@1.6.1)
+      '@tinacms/search': 1.0.40(abstract-level@1.0.4)(react@18.3.1)(sucrase@3.35.0)(typescript@5.7.3)(yup@1.6.1)
       '@vitejs/plugin-react': 3.1.0(vite@4.5.9(@types/node@22.13.1)(terser@5.38.2))
       altair-express-middleware: 7.3.6
+      async-lock: 1.4.1
       auto-bind: 4.0.0
       body-parser: 1.20.3
       busboy: 1.6.0
@@ -11327,7 +11328,7 @@ snapshots:
       prompts: 2.4.2
       readable-stream: 4.7.0
       tailwindcss: 3.4.17
-      tinacms: 2.6.4(@types/react@19.0.8)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.7.3)
+      tinacms: 2.7.0(@types/react@19.0.8)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.7.3)
       typanion: 3.13.0
       typescript: 5.7.3
       vite: 4.5.9(@types/node@22.13.1)(terser@5.38.2)
@@ -11358,11 +11359,11 @@ snapshots:
       - terser
       - ts-node
 
-  '@tinacms/graphql@1.5.12(react@18.3.1)(typescript@5.7.3)':
+  '@tinacms/graphql@1.5.13(react@18.3.1)(typescript@5.7.3)':
     dependencies:
       '@iarna/toml': 2.2.5
-      '@tinacms/mdx': 1.5.4(react@18.3.1)(typescript@5.7.3)(yup@0.32.11)
-      '@tinacms/schema-tools': 1.7.0(react@18.3.1)(yup@0.32.11)
+      '@tinacms/mdx': 1.6.0(react@18.3.1)(typescript@5.7.3)(yup@0.32.11)
+      '@tinacms/schema-tools': 1.7.1(react@18.3.1)(yup@0.32.11)
       abstract-level: 1.0.4
       date-fns: 2.30.0
       fast-glob: 3.3.3
@@ -11388,9 +11389,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@tinacms/mdx@1.5.4(react@18.3.1)(typescript@5.7.3)(yup@0.32.11)':
+  '@tinacms/mdx@1.6.0(react@18.3.1)(typescript@5.7.3)(yup@0.32.11)':
     dependencies:
-      '@tinacms/schema-tools': 1.7.0(react@18.3.1)(yup@0.32.11)
+      '@tinacms/schema-tools': 1.7.1(react@18.3.1)(yup@0.32.11)
       acorn: 8.8.2
       ccount: 2.0.1
       estree-util-is-identifier-name: 2.1.0
@@ -11426,9 +11427,9 @@ snapshots:
       - typescript
       - yup
 
-  '@tinacms/mdx@1.5.4(react@18.3.1)(typescript@5.7.3)(yup@1.6.1)':
+  '@tinacms/mdx@1.6.0(react@18.3.1)(typescript@5.7.3)(yup@1.6.1)':
     dependencies:
-      '@tinacms/schema-tools': 1.7.0(react@18.3.1)(yup@1.6.1)
+      '@tinacms/schema-tools': 1.7.1(react@18.3.1)(yup@1.6.1)
       acorn: 8.8.2
       ccount: 2.0.1
       estree-util-is-identifier-name: 2.1.0
@@ -11464,14 +11465,14 @@ snapshots:
       - typescript
       - yup
 
-  '@tinacms/metrics@1.0.8(fs-extra@11.3.0)':
+  '@tinacms/metrics@1.0.9(fs-extra@11.3.0)':
     dependencies:
       fs-extra: 11.3.0
       isomorphic-fetch: 3.0.0
     transitivePeerDependencies:
       - encoding
 
-  '@tinacms/schema-tools@1.7.0(react@18.3.1)(yup@0.32.11)':
+  '@tinacms/schema-tools@1.7.1(react@18.3.1)(yup@0.32.11)':
     dependencies:
       picomatch-browser: 2.2.6
       react: 18.3.1
@@ -11479,7 +11480,7 @@ snapshots:
       yup: 0.32.11
       zod: 3.24.2
 
-  '@tinacms/schema-tools@1.7.0(react@18.3.1)(yup@1.6.1)':
+  '@tinacms/schema-tools@1.7.1(react@18.3.1)(yup@1.6.1)':
     dependencies:
       picomatch-browser: 2.2.6
       react: 18.3.1
@@ -11487,10 +11488,10 @@ snapshots:
       yup: 1.6.1
       zod: 3.24.2
 
-  '@tinacms/search@1.0.39(abstract-level@1.0.4)(react@18.3.1)(sucrase@3.35.0)(typescript@5.7.3)(yup@1.6.1)':
+  '@tinacms/search@1.0.40(abstract-level@1.0.4)(react@18.3.1)(sucrase@3.35.0)(typescript@5.7.3)(yup@1.6.1)':
     dependencies:
-      '@tinacms/graphql': 1.5.12(react@18.3.1)(typescript@5.7.3)
-      '@tinacms/schema-tools': 1.7.0(react@18.3.1)(yup@1.6.1)
+      '@tinacms/graphql': 1.5.13(react@18.3.1)(typescript@5.7.3)
+      '@tinacms/schema-tools': 1.7.1(react@18.3.1)(yup@1.6.1)
       memory-level: 1.0.0
       search-index: 4.0.0(abstract-level@1.0.4)
       sqlite-level: 1.2.1(sucrase@3.35.0)
@@ -12499,10 +12500,6 @@ snapshots:
     dependencies:
       acorn: 8.14.0
 
-  acorn-jsx@5.3.2(acorn@8.8.2):
-    dependencies:
-      acorn: 8.8.2
-
   acorn-walk@8.3.4:
     dependencies:
       acorn: 8.14.0
@@ -12922,7 +12919,7 @@ snapshots:
   capital-case@1.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case-first: 2.0.2
 
   catering@2.1.1: {}
@@ -12974,7 +12971,7 @@ snapshots:
       path-case: 3.0.4
       sentence-case: 3.0.4
       snake-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   char-regex@1.0.2: {}
 
@@ -13185,7 +13182,7 @@ snapshots:
   constant-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case: 2.0.2
 
   content-disposition@0.5.2: {}
@@ -13260,7 +13257,7 @@ snapshots:
 
   cross-inspect@1.0.1:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   cross-spawn@5.1.0:
     dependencies:
@@ -13746,7 +13743,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.26.7
       compute-scroll-into-view: 1.0.20
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 18.3.1
       react-is: 17.0.2
       tslib: 2.8.1
@@ -14492,7 +14489,7 @@ snapshots:
       mdast-util-to-hast: 13.2.0
       property-information: 6.5.0
       space-separated-tokens: 2.0.2
-      stringify-entities: 4.0.3
+      stringify-entities: 4.0.4
       zwitch: 2.0.4
 
   hast-util-to-jsx-runtime@2.3.2:
@@ -14542,7 +14539,7 @@ snapshots:
   header-case@2.0.4:
     dependencies:
       capital-case: 1.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   hey-listen@1.0.8: {}
 
@@ -14810,7 +14807,7 @@ snapshots:
 
   is-lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   is-npm@6.0.0: {}
 
@@ -14858,7 +14855,7 @@ snapshots:
 
   is-upper-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   is-windows@1.0.2: {}
 
@@ -15125,7 +15122,7 @@ snapshots:
 
   lower-case-first@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   lower-case@2.0.2:
     dependencies:
@@ -15202,8 +15199,8 @@ snapshots:
       '@types/unist': 2.0.11
       mdast-util-from-markdown: 1.3.0
       mdast-util-to-markdown: 1.5.0
-      parse-entities: 4.0.1
-      stringify-entities: 4.0.3
+      parse-entities: 4.0.2
+      stringify-entities: 4.0.4
       unist-util-visit-parents: 5.1.3
     transitivePeerDependencies:
       - supports-color
@@ -15256,8 +15253,8 @@ snapshots:
       micromark-util-decode-numeric-character-reference: 1.1.0
       micromark-util-decode-string: 1.1.0
       micromark-util-normalize-identifier: 1.1.0
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
       unist-util-stringify-position: 3.0.3
       uvu: 0.5.6
     transitivePeerDependencies:
@@ -15296,7 +15293,7 @@ snapshots:
       '@types/mdast': 3.0.15
       ccount: 2.0.1
       mdast-util-find-and-replace: 2.2.2
-      micromark-util-character: 1.1.0
+      micromark-util-character: 1.2.0
 
   mdast-util-gfm-autolink-literal@2.0.1:
     dependencies:
@@ -15431,8 +15428,8 @@ snapshots:
       ccount: 2.0.1
       mdast-util-from-markdown: 1.3.0
       mdast-util-to-markdown: 1.5.0
-      parse-entities: 4.0.1
-      stringify-entities: 4.0.3
+      parse-entities: 4.0.2
+      stringify-entities: 4.0.4
       unist-util-remove-position: 4.0.2
       unist-util-stringify-position: 3.0.3
       vfile-message: 3.1.4
@@ -15606,18 +15603,18 @@ snapshots:
       decode-named-character-reference: 1.0.2
       micromark-factory-destination: 1.1.0
       micromark-factory-label: 1.1.0
-      micromark-factory-space: 1.0.0
+      micromark-factory-space: 1.1.0
       micromark-factory-title: 1.1.0
       micromark-factory-whitespace: 1.0.0
-      micromark-util-character: 1.1.0
+      micromark-util-character: 1.2.0
       micromark-util-chunked: 1.1.0
       micromark-util-classify-character: 1.1.0
       micromark-util-html-tag-name: 1.2.0
       micromark-util-normalize-identifier: 1.1.0
       micromark-util-resolve-all: 1.1.0
       micromark-util-subtokenize: 1.1.0
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
       uvu: 0.5.6
 
   micromark-core-commonmark@2.0.2:
@@ -15658,10 +15655,10 @@ snapshots:
 
   micromark-extension-gfm-autolink-literal@1.0.5:
     dependencies:
-      micromark-util-character: 1.1.0
+      micromark-util-character: 1.2.0
       micromark-util-sanitize-uri: 1.2.0
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
 
   micromark-extension-gfm-autolink-literal@2.1.0:
     dependencies:
@@ -15673,12 +15670,12 @@ snapshots:
   micromark-extension-gfm-footnote@1.1.2:
     dependencies:
       micromark-core-commonmark: 1.1.0
-      micromark-factory-space: 1.0.0
-      micromark-util-character: 1.1.0
+      micromark-factory-space: 1.1.0
+      micromark-util-character: 1.2.0
       micromark-util-normalize-identifier: 1.1.0
       micromark-util-sanitize-uri: 1.2.0
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
       uvu: 0.5.6
 
   micromark-extension-gfm-footnote@2.1.0:
@@ -15697,8 +15694,8 @@ snapshots:
       micromark-util-chunked: 1.1.0
       micromark-util-classify-character: 1.1.0
       micromark-util-resolve-all: 1.1.0
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
       uvu: 0.5.6
 
   micromark-extension-gfm-strikethrough@2.1.0:
@@ -15712,10 +15709,10 @@ snapshots:
 
   micromark-extension-gfm-table@1.0.7:
     dependencies:
-      micromark-factory-space: 1.0.0
-      micromark-util-character: 1.1.0
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-factory-space: 1.1.0
+      micromark-util-character: 1.2.0
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
       uvu: 0.5.6
 
   micromark-extension-gfm-table@2.1.1:
@@ -15728,7 +15725,7 @@ snapshots:
 
   micromark-extension-gfm-tagfilter@1.0.2:
     dependencies:
-      micromark-util-types: 1.0.2
+      micromark-util-types: 1.1.0
 
   micromark-extension-gfm-tagfilter@2.0.0:
     dependencies:
@@ -15736,10 +15733,10 @@ snapshots:
 
   micromark-extension-gfm-task-list-item@1.0.5:
     dependencies:
-      micromark-factory-space: 1.0.0
-      micromark-util-character: 1.1.0
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-factory-space: 1.1.0
+      micromark-util-character: 1.2.0
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
       uvu: 0.5.6
 
   micromark-extension-gfm-task-list-item@2.1.0:
@@ -15758,7 +15755,7 @@ snapshots:
       micromark-extension-gfm-tagfilter: 1.0.2
       micromark-extension-gfm-task-list-item: 1.0.5
       micromark-util-combine-extensions: 1.1.0
-      micromark-util-types: 1.0.2
+      micromark-util-types: 1.1.0
 
   micromark-extension-gfm@2.0.3:
     dependencies:
@@ -15769,7 +15766,7 @@ snapshots:
       micromark-extension-gfm-tagfilter: 1.0.2
       micromark-extension-gfm-task-list-item: 1.0.5
       micromark-util-combine-extensions: 1.1.0
-      micromark-util-types: 1.0.2
+      micromark-util-types: 1.1.0
 
   micromark-extension-gfm@3.0.0:
     dependencies:
@@ -15786,11 +15783,11 @@ snapshots:
     dependencies:
       '@types/estree': 1.0.6
       micromark-factory-mdx-expression: 1.0.7
-      micromark-factory-space: 1.0.0
-      micromark-util-character: 1.1.0
+      micromark-factory-space: 1.1.0
+      micromark-util-character: 1.2.0
       micromark-util-events-to-acorn: 1.2.3
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
       uvu: 0.5.6
 
   micromark-extension-mdx-expression@3.0.0:
@@ -15810,10 +15807,10 @@ snapshots:
       '@types/estree': 1.0.6
       estree-util-is-identifier-name: 2.1.0
       micromark-factory-mdx-expression: 1.0.7
-      micromark-factory-space: 1.0.0
-      micromark-util-character: 1.1.0
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-factory-space: 1.1.0
+      micromark-util-character: 1.2.0
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
       uvu: 0.5.6
       vfile-message: 3.1.4
 
@@ -15833,7 +15830,7 @@ snapshots:
 
   micromark-extension-mdx-md@1.0.1:
     dependencies:
-      micromark-util-types: 1.0.2
+      micromark-util-types: 1.1.0
 
   micromark-extension-mdx-md@2.0.0:
     dependencies:
@@ -15843,10 +15840,10 @@ snapshots:
     dependencies:
       '@types/estree': 1.0.6
       micromark-core-commonmark: 1.1.0
-      micromark-util-character: 1.1.0
+      micromark-util-character: 1.2.0
       micromark-util-events-to-acorn: 1.2.3
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
       unist-util-position-from-estree: 1.1.2
       uvu: 0.5.6
       vfile-message: 3.1.4
@@ -15865,14 +15862,14 @@ snapshots:
 
   micromark-extension-mdxjs@1.0.1:
     dependencies:
-      acorn: 8.8.2
-      acorn-jsx: 5.3.2(acorn@8.8.2)
+      acorn: 8.14.0
+      acorn-jsx: 5.3.2(acorn@8.14.0)
       micromark-extension-mdx-expression: 1.0.8
       micromark-extension-mdx-jsx: 1.0.5
       micromark-extension-mdx-md: 1.0.1
       micromark-extension-mdxjs-esm: 1.0.5
       micromark-util-combine-extensions: 1.1.0
-      micromark-util-types: 1.0.2
+      micromark-util-types: 1.1.0
 
   micromark-extension-mdxjs@3.0.0:
     dependencies:
@@ -15887,9 +15884,9 @@ snapshots:
 
   micromark-factory-destination@1.1.0:
     dependencies:
-      micromark-util-character: 1.1.0
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-util-character: 1.2.0
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
 
   micromark-factory-destination@2.0.1:
     dependencies:
@@ -15899,9 +15896,9 @@ snapshots:
 
   micromark-factory-label@1.1.0:
     dependencies:
-      micromark-util-character: 1.1.0
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-util-character: 1.2.0
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
       uvu: 0.5.6
 
   micromark-factory-label@2.0.1:
@@ -15913,11 +15910,11 @@ snapshots:
 
   micromark-factory-mdx-expression@1.0.7:
     dependencies:
-      micromark-factory-space: 1.0.0
-      micromark-util-character: 1.1.0
+      micromark-factory-space: 1.1.0
+      micromark-util-character: 1.2.0
       micromark-util-events-to-acorn: 1.2.3
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
       unist-util-position-from-estree: 1.1.2
       uvu: 0.5.6
       vfile-message: 3.1.4
@@ -15936,8 +15933,8 @@ snapshots:
 
   micromark-factory-space@1.0.0:
     dependencies:
-      micromark-util-character: 1.1.0
-      micromark-util-types: 1.0.2
+      micromark-util-character: 1.2.0
+      micromark-util-types: 1.1.0
 
   micromark-factory-space@1.1.0:
     dependencies:
@@ -15951,10 +15948,10 @@ snapshots:
 
   micromark-factory-title@1.1.0:
     dependencies:
-      micromark-factory-space: 1.0.0
-      micromark-util-character: 1.1.0
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-factory-space: 1.1.0
+      micromark-util-character: 1.2.0
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
 
   micromark-factory-title@2.0.1:
     dependencies:
@@ -15965,10 +15962,10 @@ snapshots:
 
   micromark-factory-whitespace@1.0.0:
     dependencies:
-      micromark-factory-space: 1.0.0
-      micromark-util-character: 1.1.0
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-factory-space: 1.1.0
+      micromark-util-character: 1.2.0
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
 
   micromark-factory-whitespace@2.0.1:
     dependencies:
@@ -15979,8 +15976,8 @@ snapshots:
 
   micromark-util-character@1.1.0:
     dependencies:
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
 
   micromark-util-character@1.2.0:
     dependencies:
@@ -15994,7 +15991,7 @@ snapshots:
 
   micromark-util-chunked@1.1.0:
     dependencies:
-      micromark-util-symbol: 1.0.1
+      micromark-util-symbol: 1.1.0
 
   micromark-util-chunked@2.0.1:
     dependencies:
@@ -16002,9 +15999,9 @@ snapshots:
 
   micromark-util-classify-character@1.1.0:
     dependencies:
-      micromark-util-character: 1.1.0
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-util-character: 1.2.0
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
 
   micromark-util-classify-character@2.0.1:
     dependencies:
@@ -16015,7 +16012,7 @@ snapshots:
   micromark-util-combine-extensions@1.1.0:
     dependencies:
       micromark-util-chunked: 1.1.0
-      micromark-util-types: 1.0.2
+      micromark-util-types: 1.1.0
 
   micromark-util-combine-extensions@2.0.1:
     dependencies:
@@ -16024,7 +16021,7 @@ snapshots:
 
   micromark-util-decode-numeric-character-reference@1.1.0:
     dependencies:
-      micromark-util-symbol: 1.0.1
+      micromark-util-symbol: 1.1.0
 
   micromark-util-decode-numeric-character-reference@2.0.2:
     dependencies:
@@ -16033,9 +16030,9 @@ snapshots:
   micromark-util-decode-string@1.1.0:
     dependencies:
       decode-named-character-reference: 1.0.2
-      micromark-util-character: 1.1.0
+      micromark-util-character: 1.2.0
       micromark-util-decode-numeric-character-reference: 1.1.0
-      micromark-util-symbol: 1.0.1
+      micromark-util-symbol: 1.1.0
 
   micromark-util-decode-string@2.0.1:
     dependencies:
@@ -16054,8 +16051,8 @@ snapshots:
       '@types/estree': 1.0.6
       '@types/unist': 2.0.11
       estree-util-visit: 1.2.1
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
       uvu: 0.5.6
       vfile-message: 3.1.4
 
@@ -16076,7 +16073,7 @@ snapshots:
 
   micromark-util-normalize-identifier@1.1.0:
     dependencies:
-      micromark-util-symbol: 1.0.1
+      micromark-util-symbol: 1.1.0
 
   micromark-util-normalize-identifier@2.0.1:
     dependencies:
@@ -16084,7 +16081,7 @@ snapshots:
 
   micromark-util-resolve-all@1.1.0:
     dependencies:
-      micromark-util-types: 1.0.2
+      micromark-util-types: 1.1.0
 
   micromark-util-resolve-all@2.0.1:
     dependencies:
@@ -16092,9 +16089,9 @@ snapshots:
 
   micromark-util-sanitize-uri@1.2.0:
     dependencies:
-      micromark-util-character: 1.1.0
+      micromark-util-character: 1.2.0
       micromark-util-encode: 1.1.0
-      micromark-util-symbol: 1.0.1
+      micromark-util-symbol: 1.1.0
 
   micromark-util-sanitize-uri@2.0.1:
     dependencies:
@@ -16105,8 +16102,8 @@ snapshots:
   micromark-util-subtokenize@1.1.0:
     dependencies:
       micromark-util-chunked: 1.1.0
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
       uvu: 0.5.6
 
   micromark-util-subtokenize@2.0.4:
@@ -16141,8 +16138,8 @@ snapshots:
       debug: 4.4.0
       decode-named-character-reference: 1.0.2
       micromark-core-commonmark: 1.1.0
-      micromark-factory-space: 1.0.0
-      micromark-util-character: 1.1.0
+      micromark-factory-space: 1.1.0
+      micromark-util-character: 1.2.0
       micromark-util-chunked: 1.1.0
       micromark-util-combine-extensions: 1.1.0
       micromark-util-decode-numeric-character-reference: 1.1.0
@@ -16151,8 +16148,8 @@ snapshots:
       micromark-util-resolve-all: 1.1.0
       micromark-util-sanitize-uri: 1.2.0
       micromark-util-subtokenize: 1.1.0
-      micromark-util-symbol: 1.0.1
-      micromark-util-types: 1.0.2
+      micromark-util-symbol: 1.1.0
+      micromark-util-types: 1.1.0
       uvu: 0.5.6
     transitivePeerDependencies:
       - supports-color
@@ -16535,7 +16532,7 @@ snapshots:
   path-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   path-exists@3.0.0: {}
 
@@ -17002,7 +16999,7 @@ snapshots:
       lodash: 4.17.21
       lodash-es: 4.17.21
       material-colors: 1.2.6
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 18.3.1
       reactcss: 1.2.3(react@18.3.1)
       tinycolor2: 1.6.0
@@ -17010,7 +17007,7 @@ snapshots:
   react-datetime@3.3.1(moment@2.29.4)(react@18.3.1):
     dependencies:
       moment: 2.29.4
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 18.3.1
 
   react-dev-utils@12.0.1(typescript@5.7.3)(webpack@5.97.1):
@@ -17116,7 +17113,7 @@ snapshots:
       '@types/react-redux': 7.1.34
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 18.3.1
       react-is: 17.0.2
     optionalDependencies:
@@ -17279,9 +17276,9 @@ snapshots:
       estree-util-build-jsx: 3.0.1
       vfile: 6.0.3
 
-  recma-jsx@1.0.0(acorn@8.8.2):
+  recma-jsx@1.0.0(acorn@8.14.0):
     dependencies:
-      acorn-jsx: 5.3.2(acorn@8.8.2)
+      acorn-jsx: 5.3.2(acorn@8.14.0)
       estree-util-to-js: 2.0.0
       recma-parse: 1.0.0
       recma-stringify: 1.0.0
@@ -17668,7 +17665,7 @@ snapshots:
   sentence-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case-first: 2.0.2
 
   serialize-javascript@6.0.2:
@@ -17804,7 +17801,7 @@ snapshots:
 
   signed-varint@2.0.1:
     dependencies:
-      varint: 5.0.0
+      varint: 5.0.2
 
   signedsource@1.0.0: {}
 
@@ -17925,7 +17922,7 @@ snapshots:
 
   sponge-case@1.0.1:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   sprintf-js@1.0.3: {}
 
@@ -18090,7 +18087,7 @@ snapshots:
 
   swap-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   tabbable@6.2.0: {}
 
@@ -18174,7 +18171,7 @@ snapshots:
 
   thunky@1.1.0: {}
 
-  tinacms@2.6.4(@types/react@19.0.8)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.7.3):
+  tinacms@2.7.0(@types/react@19.0.8)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.7.3):
     dependencies:
       '@ariakit/react': 0.4.15(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@floating-ui/dom': 1.6.13
@@ -18192,9 +18189,9 @@ snapshots:
       '@radix-ui/react-toolbar': 1.1.2(@types/react@19.0.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-tooltip': 1.1.8(@types/react@19.0.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-hook/window-size': 3.1.1(react@18.3.1)
-      '@tinacms/mdx': 1.5.4(react@18.3.1)(typescript@5.7.3)(yup@1.6.1)
-      '@tinacms/schema-tools': 1.7.0(react@18.3.1)(yup@1.6.1)
-      '@tinacms/search': 1.0.39(abstract-level@1.0.4)(react@18.3.1)(sucrase@3.35.0)(typescript@5.7.3)(yup@1.6.1)
+      '@tinacms/mdx': 1.6.0(react@18.3.1)(typescript@5.7.3)(yup@1.6.1)
+      '@tinacms/schema-tools': 1.7.1(react@18.3.1)(yup@1.6.1)
+      '@tinacms/search': 1.0.40(abstract-level@1.0.4)(react@18.3.1)(sucrase@3.35.0)(typescript@5.7.3)(yup@1.6.1)
       '@udecode/cn': 33.0.0(@types/react@19.0.8)(class-variance-authority@0.7.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tailwind-merge@2.6.0)
       '@udecode/plate': 36.5.9(@types/react@19.0.8)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-autoformat': 36.5.6(@udecode/plate-common@36.5.9(@types/react@19.0.8)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.107.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(slate@0.103.0))(slate@0.103.0)
@@ -18273,7 +18270,7 @@ snapshots:
 
   title-case@3.0.3:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   title@3.5.3:
     dependencies:
@@ -18509,11 +18506,11 @@ snapshots:
 
   upper-case-first@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   upper-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   uri-js@4.4.1:
     dependencies:
