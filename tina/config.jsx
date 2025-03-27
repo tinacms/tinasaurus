@@ -52,9 +52,11 @@ const PostCollection = {
   path: "blog",
   format: "mdx",
   ui: {
-    defaultItem: {
-      date: docusaurusDate(new Date()),
-    },
+    defaultItem: () => {
+      return {
+        date: docusaurusDate(new Date()),
+      }
+    }
   },
   fields: [
     {
@@ -177,8 +179,8 @@ const DocLinkTemplate = {
         label: item?.label
           ? item?.label
           : item?.document
-          ? titleFromSlug(item?.document)
-          : item.name,
+            ? titleFromSlug(item?.document)
+            : item.name,
       };
     },
   },
