@@ -6,7 +6,7 @@
     "dev": "tinacms dev -c \"docusaurus start\" ",
     "start": "docusaurus start",
     "build": "tinacms build && docusaurus build",
-    "build-local": "tinacms build --local --skip-indexing --skip-cloud-checks && docusaurus build",
+    "build-local": "tinacms build --content=local --skip-cloud-checks -c \"docusaurus build\"",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -18,12 +18,12 @@
     "@docusaurus/core": "3.3.2",
     "@docusaurus/preset-classic": "3.3.2",
     "@mdx-js/react": "^3.1.1",
-    "@tinacms/cli": "^2.2.1",
+    "@tinacms/cli": "^2.3.1",
     "clsx": "^2.1.1",
     "prism-react-renderer": "^2.4.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tinacms": "^3.7.1",
+    "tinacms": "^3.8.1",
     "title": "^3.5.3"
   },
   "devDependencies": {
